@@ -1,0 +1,315 @@
+{
+  "summary": {
+    "totalUrls": 3,
+    "completedAudits": 3,
+    "failedAudits": 0,
+    "averageSecurityScore": 80,
+    "criticalIssues": 0,
+    "commonIssues": [
+      "Implement strict CSP without unsafe-inline/unsafe-eval",
+      "Set X-Content-Type-Options to nosniff",
+      "Implement restrictive Permissions-Policy",
+      "Set Cross-Origin-Opener-Policy to same-origin"
+    ]
+  },
+  "results": [
+    {
+      "url": "https://quantmutual.com/",
+      "timestamp": "2025-01-04T19:09:09.828Z",
+      "securityScore": 80,
+      "findings": {
+        "securityHeaders": {
+          "present": {
+            "Strict-Transport-Security": {
+              "value": "max-age=31536000",
+              "proper": true
+            },
+            "X-Frame-Options": {
+              "value": "SAMEORIGIN",
+              "proper": true
+            }
+          },
+          "missing": [
+            "Content-Security-Policy",
+            "X-Content-Type-Options",
+            "Permissions-Policy",
+            "Cross-Origin-Opener-Policy"
+          ],
+          "recommendations": [
+            "Implement strict CSP without unsafe-inline/unsafe-eval",
+            "Set X-Content-Type-Options to nosniff",
+            "Implement restrictive Permissions-Policy",
+            "Set Cross-Origin-Opener-Policy to same-origin"
+          ]
+        },
+        "sslAnalysis": {
+          "certificate": {
+            "valid": true,
+            "daysUntilExpiration": null
+          },
+          "protocol": {
+            "name": "TLSv1.3",
+            "secure": true
+          },
+          "cipher": {
+            "name": "TLS_AES_256_GCM_SHA384",
+            "secure": true
+          },
+          "recommendations": []
+        },
+        "vulnerabilities": {
+          "xss": [],
+          "sqli": [],
+          "openRedirect": [],
+          "recommendations": []
+        },
+        "authAnalysis": {
+          "findings": [],
+          "recommendations": []
+        },
+        "exposedData": {
+          "exposedPaths": [],
+          "sensitiveFiles": [
+            {
+              "type": "Email",
+              "count": 8
+            }
+          ],
+          "recommendations": [
+            "Remove sensitive data from client-side code"
+          ]
+        }
+      }
+    },
+    {
+      "url": "https://quantmutual.com/about-us/quantgroup",
+      "timestamp": "2025-01-04T19:09:12.615Z",
+      "securityScore": 80,
+      "findings": {
+        "securityHeaders": {
+          "present": {
+            "Strict-Transport-Security": {
+              "value": "max-age=31536000",
+              "proper": true
+            },
+            "X-Frame-Options": {
+              "value": "SAMEORIGIN",
+              "proper": true
+            }
+          },
+          "missing": [
+            "Content-Security-Policy",
+            "X-Content-Type-Options",
+            "Permissions-Policy",
+            "Cross-Origin-Opener-Policy"
+          ],
+          "recommendations": [
+            "Implement strict CSP without unsafe-inline/unsafe-eval",
+            "Set X-Content-Type-Options to nosniff",
+            "Implement restrictive Permissions-Policy",
+            "Set Cross-Origin-Opener-Policy to same-origin"
+          ]
+        },
+        "sslAnalysis": {
+          "certificate": {
+            "valid": true,
+            "daysUntilExpiration": null
+          },
+          "protocol": {
+            "name": "TLSv1.3",
+            "secure": true
+          },
+          "cipher": {
+            "name": "TLS_AES_256_GCM_SHA384",
+            "secure": true
+          },
+          "recommendations": []
+        },
+        "vulnerabilities": {
+          "xss": [],
+          "sqli": [],
+          "openRedirect": [],
+          "recommendations": []
+        },
+        "authAnalysis": {
+          "findings": [],
+          "recommendations": []
+        },
+        "exposedData": {
+          "exposedPaths": [
+            {
+              "path": "/.git",
+              "status": 200,
+              "contentLength": "11915"
+            },
+            {
+              "path": "/.env",
+              "status": 200,
+              "contentLength": "11916"
+            },
+            {
+              "path": "/config",
+              "status": 200,
+              "contentLength": "11918"
+            },
+            {
+              "path": "/backup",
+              "status": 200,
+              "contentLength": "11918"
+            },
+            {
+              "path": "/wp-config.php",
+              "status": 200,
+              "contentLength": "11928"
+            },
+            {
+              "path": "/phpinfo.php",
+              "status": 200,
+              "contentLength": "11926"
+            },
+            {
+              "path": "/.htaccess",
+              "status": 200,
+              "contentLength": "11919"
+            },
+            {
+              "path": "/admin",
+              "status": 200,
+              "contentLength": "11918"
+            },
+            {
+              "path": "/console",
+              "status": 200,
+              "contentLength": "11917"
+            }
+          ],
+          "sensitiveFiles": [
+            {
+              "type": "Email",
+              "count": 8
+            }
+          ],
+          "recommendations": [
+            "Restrict access to sensitive paths and configuration files",
+            "Remove sensitive data from client-side code"
+          ]
+        }
+      }
+    },
+    {
+      "url": "https://quantmutual.com/mutual-funds-india/funds",
+      "timestamp": "2025-01-04T19:09:16.953Z",
+      "securityScore": 80,
+      "findings": {
+        "securityHeaders": {
+          "present": {
+            "Strict-Transport-Security": {
+              "value": "max-age=31536000",
+              "proper": true
+            },
+            "X-Frame-Options": {
+              "value": "SAMEORIGIN",
+              "proper": true
+            }
+          },
+          "missing": [
+            "Content-Security-Policy",
+            "X-Content-Type-Options",
+            "Permissions-Policy",
+            "Cross-Origin-Opener-Policy"
+          ],
+          "recommendations": [
+            "Implement strict CSP without unsafe-inline/unsafe-eval",
+            "Set X-Content-Type-Options to nosniff",
+            "Implement restrictive Permissions-Policy",
+            "Set Cross-Origin-Opener-Policy to same-origin"
+          ]
+        },
+        "sslAnalysis": {
+          "certificate": {
+            "valid": true,
+            "daysUntilExpiration": null
+          },
+          "protocol": {
+            "name": "TLSv1.3",
+            "secure": true
+          },
+          "cipher": {
+            "name": "TLS_AES_256_GCM_SHA384",
+            "secure": true
+          },
+          "recommendations": []
+        },
+        "vulnerabilities": {
+          "xss": [],
+          "sqli": [],
+          "openRedirect": [],
+          "recommendations": []
+        },
+        "authAnalysis": {
+          "findings": [],
+          "recommendations": []
+        },
+        "exposedData": {
+          "exposedPaths": [
+            {
+              "path": "/.git",
+              "status": 200,
+              "contentLength": "13156"
+            },
+            {
+              "path": "/.env",
+              "status": 200,
+              "contentLength": "13157"
+            },
+            {
+              "path": "/config",
+              "status": 200,
+              "contentLength": "13160"
+            },
+            {
+              "path": "/backup",
+              "status": 200,
+              "contentLength": "13159"
+            },
+            {
+              "path": "/wp-config.php",
+              "status": 200,
+              "contentLength": "13174"
+            },
+            {
+              "path": "/phpinfo.php",
+              "status": 200,
+              "contentLength": "13173"
+            },
+            {
+              "path": "/.htaccess",
+              "status": 200,
+              "contentLength": "13162"
+            },
+            {
+              "path": "/admin",
+              "status": 200,
+              "contentLength": "13161"
+            },
+            {
+              "path": "/console",
+              "status": 200,
+              "contentLength": "13161"
+            }
+          ],
+          "sensitiveFiles": [
+            {
+              "type": "Email",
+              "count": 8
+            }
+          ],
+          "recommendations": [
+            "Restrict access to sensitive paths and configuration files",
+            "Remove sensitive data from client-side code"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+[
+  {
+    "url": "https://quantmutual.com/",
+    "timestamp": "2025-01-04T19:07:02.114Z",
+    "analyses": {
+      "mobile": {
+        "issues": [
+          {
+            "type": "Mobile",
+            "severity": "High",
+            "location": "Popup covering main content",
+            "recommendation": "Ensure popups can be easily closed or do not obscure content on initial load."
+          },
+          {
+            "type": "Accessibility",
+            "severity": "Medium",
+            "location": "Popup text contrast",
+            "recommendation": "Increase text contrast to improve readability for users with visual impairments."
+          },
+          {
+            "type": "Usability",
+            "severity": "Medium",
+            "location": "Navigation icons at the top right corner",
+            "recommendation": "Increase touch target size to comply with mobile usability standards."
+          },
+          {
+            "type": "Layout",
+            "severity": "Low",
+            "location": "Space between fund cards",
+            "recommendation": "Increase spacing between fund cards to improve visual hierarchy and readability."
+          },
+          {
+            "type": "Mobile",
+            "severity": "Low",
+            "location": "Vertical scroll required for navigation",
+            "recommendation": "Implement a sticky navigation bar or quick links for easier access."
+          }
+        ],
+        "screenshot": "/Users/manojkumar/Developer/fulcro/auto-audit/results/screenshots/https___quantmutual_com__mobile.png"
+      },
+      "desktop": {
+        "issues": [
+          {
+            "type": "Accessibility",
+            "severity": "High",
+            "location": "Main navigation bar at the top with small text and low contrast",
+            "recommendation": "Increase font size and ensure sufficient contrast between text and background for better readability."
+          },
+          {
+            "type": "Usability",
+            "severity": "Medium",
+            "location": "Popup over main content area",
+            "recommendation": "Consider making the popup less intrusive by reducing its size or offering an easy-to-find close option."
+          },
+          {
+            "type": "Layout",
+            "severity": "Medium",
+            "location": "Featured Quant Funds section",
+            "recommendation": "Improve alignment and spacing between fund cards for a cleaner visual hierarchy."
+          },
+          {
+            "type": "Accessibility",
+            "severity": "Medium",
+            "location": "Text in the footer",
+            "recommendation": "Ensure all text, particularly in the footer, has sufficient contrast and larger font size for better readability."
+          },
+          {
+            "type": "Layout",
+            "severity": "Low",
+            "location": "Disclaimer at the bottom",
+            "recommendation": "Separate disclaimer text from other sections with appropriate spacing to enhance readability and focus."
+          }
+        ],
+        "screenshot": "/Users/manojkumar/Developer/fulcro/auto-audit/results/screenshots/https___quantmutual_com__desktop.png"
+      }
+    }
+  },
+  {
+    "url": "https://quantmutual.com/about-us/quantgroup",
+    "timestamp": "2025-01-04T19:07:30.068Z",
+    "analyses": {
+      "mobile": {
+        "issues": [
+          {
+            "type": "Accessibility",
+            "severity": "High",
+            "location": "Top navigation bar with A+ A- icons",
+            "recommendation": "Ensure font resizing controls are functional and accessible to screen readers."
+          },
+          {
+            "type": "Mobile",
+            "severity": "Medium",
+            "location": "Menu button at top right",
+            "recommendation": "Increase touch target size for better accessibility on mobile devices."
+          },
+          {
+            "type": "Accessibility",
+            "severity": "High",
+            "location": "Social media icons in the footer",
+            "recommendation": "Add descriptive alt text for icons to improve screen reader accessibility."
+          },
+          {
+            "type": "Layout",
+            "severity": "Medium",
+            "location": "Text content on green background in the footer",
+            "recommendation": "Improve contrast between text and background for better readability."
+          },
+          {
+            "type": "Usability",
+            "severity": "Medium",
+            "location": "Breadcrumbs at the top of the page",
+            "recommendation": "Make breadcrumb links more prominent for easier navigation."
+          },
+          {
+            "type": "Mobile",
+            "severity": "Low",
+            "location": "Paragraph text throughout the page",
+            "recommendation": "Ensure font size is large enough for comfortable reading on mobile devices."
+          }
+        ],
+        "screenshot": "/Users/manojkumar/Developer/fulcro/auto-audit/results/screenshots/https___quantmutual_com_about_us_quantgroup_mobile.png"
+      },
+      "desktop": {
+        "issues": [
+          {
+            "type": "Layout",
+            "severity": "Medium",
+            "location": "Top navigation bar",
+            "recommendation": "Increase spacing between navigation items for improved readability and clickability."
+          },
+          {
+            "type": "Accessibility",
+            "severity": "High",
+            "location": "Header and subheader text contrast",
+            "recommendation": "Increase text contrast against the background to ensure readability for users with visual impairments."
+          },
+          {
+            "type": "Usability",
+            "severity": "Low",
+            "location": "Footer links",
+            "recommendation": "Ensure that footer links are clearly distinguishable as clickable elements and provide more spacing."
+          },
+          {
+            "type": "Performance",
+            "severity": "Medium",
+            "location": "Symbol images section",
+            "recommendation": "Optimize and compress images to improve page load time and performance."
+          },
+          {
+            "type": "Accessibility",
+            "severity": "Medium",
+            "location": "Text size throughout the page",
+            "recommendation": "Increase the default text size to improve legibility for users with visual impairments."
+          }
+        ],
+        "screenshot": "/Users/manojkumar/Developer/fulcro/auto-audit/results/screenshots/https___quantmutual_com_about_us_quantgroup_desktop.png"
+      }
+    }
+  },
+  {
+    "url": "https://quantmutual.com/mutual-funds-india/funds",
+    "timestamp": "2025-01-04T19:07:57.849Z",
+    "analyses": {
+      "mobile": {
+        "issues": [
+          {
+            "type": "Layout",
+            "severity": "Medium",
+            "location": "Top navigation bar",
+            "recommendation": "Ensure elements are evenly spaced and aligned properly."
+          },
+          {
+            "type": "Mobile",
+            "severity": "High",
+            "location": "Touch targets for buttons",
+            "recommendation": "Increase button size to improve touch target accessibility."
+          },
+          {
+            "type": "Accessibility",
+            "severity": "Medium",
+            "location": "Text contrast against background",
+            "recommendation": "Increase contrast for better readability."
+          },
+          {
+            "type": "Performance",
+            "severity": "Low",
+            "location": "Page loading time",
+            "recommendation": "Optimize images and scripts for faster loading."
+          }
+        ],
+        "screenshot": "/Users/manojkumar/Developer/fulcro/auto-audit/results/screenshots/https___quantmutual_com_mutual_funds_india_funds_mobile.png"
+      },
+      "desktop": {
+        "issues": [
+          {
+            "type": "Layout/Usability",
+            "severity": "Medium",
+            "location": "Navigation bar at the top",
+            "recommendation": "Ensure consistent spacing between menu items for better visual balance."
+          },
+          {
+            "type": "Layout/Usability",
+            "severity": "High",
+            "location": "Fund cards in the main content area",
+            "recommendation": "Increase padding within cards to improve readability and make the design less cramped."
+          },
+          {
+            "type": "Accessibility",
+            "severity": "High",
+            "location": "Text on 'Know More' buttons",
+            "recommendation": "Increase text contrast between the button color and the text for better readability."
+          },
+          {
+            "type": "Accessibility",
+            "severity": "Medium",
+            "location": "Color contrast in header and footer sections",
+            "recommendation": "Ensure sufficient color contrast between text and background to meet WCAG standards."
+          },
+          {
+            "type": "Performance",
+            "severity": "Low",
+            "location": "Overall page load time",
+            "recommendation": "Optimize images to reduce loading time and improve performance."
+          },
+          {
+            "type": "Layout/Usability",
+            "severity": "Low",
+            "location": "Footer area links",
+            "recommendation": "Add a hover effect to footer links to improve user interaction feedback."
+          }
+        ],
+        "screenshot": "/Users/manojkumar/Developer/fulcro/auto-audit/results/screenshots/https___quantmutual_com_mutual_funds_india_funds_desktop.png"
+      }
+    }
+  }
+]

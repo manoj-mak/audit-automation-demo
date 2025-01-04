@@ -1,0 +1,651 @@
+[
+  {
+    "url": "https://quantmutual.com/",
+    "timestamp": "2025-01-04T19:08:47.572Z",
+    "lighthouse": {
+      "scores": {
+        "seo": 83,
+        "bestPractices": 54
+      },
+      "audits": {
+        "is-on-https": {
+          "score": 0,
+          "title": "Does not use HTTPS",
+          "description": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more about HTTPS](https://developer.chrome.com/docs/lighthouse/pwa/is-on-https/)."
+        },
+        "redirects-http": {
+          "score": null,
+          "title": "Redirects HTTP traffic to HTTPS",
+          "description": "Make sure that you redirect all HTTP traffic to HTTPS in order to enable secure web features for all your users. [Learn more](https://developer.chrome.com/docs/lighthouse/pwa/redirects-http/)."
+        },
+        "viewport": {
+          "score": 1,
+          "title": "Has a `<meta name=\"viewport\">` tag with `width` or `initial-scale`",
+          "description": "A `<meta name=\"viewport\">` not only optimizes your app for mobile screen sizes, but also prevents [a 300 millisecond delay to user input](https://developer.chrome.com/blog/300ms-tap-delay-gone-away/). [Learn more about using the viewport meta tag](https://developer.chrome.com/docs/lighthouse/pwa/viewport/)."
+        },
+        "errors-in-console": {
+          "score": 0,
+          "title": "Browser errors were logged to the console",
+          "description": "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns. [Learn more about this errors in console diagnostic audit](https://developer.chrome.com/docs/lighthouse/best-practices/errors-in-console/)"
+        },
+        "image-aspect-ratio": {
+          "score": 1,
+          "title": "Displays images with correct aspect ratio",
+          "description": "Image display dimensions should match natural aspect ratio. [Learn more about image aspect ratio](https://developer.chrome.com/docs/lighthouse/best-practices/image-aspect-ratio/)."
+        },
+        "image-size-responsive": {
+          "score": 0,
+          "title": "Serves images with low resolution",
+          "description": "Image natural dimensions should be proportional to the display size and the pixel ratio to maximize image clarity. [Learn how to provide responsive images](https://web.dev/articles/serve-responsive-images)."
+        },
+        "deprecations": {
+          "score": 0,
+          "title": "Uses deprecated APIs",
+          "description": "Deprecated APIs will eventually be removed from the browser. [Learn more about deprecated APIs](https://developer.chrome.com/docs/lighthouse/best-practices/deprecations/)."
+        },
+        "third-party-cookies": {
+          "score": 1,
+          "title": "Avoids third-party cookies",
+          "description": "Chrome is moving towards a new experience that allows users to choose to browse without third-party cookies. [Learn more about third-party cookies](https://developers.google.com/privacy-sandbox/cookies)."
+        },
+        "valid-source-maps": {
+          "score": 1,
+          "title": "Page has valid source maps",
+          "description": "Source maps translate minified code to the original source code. This helps developers debug in production. In addition, Lighthouse is able to provide further insights. Consider deploying source maps to take advantage of these benefits. [Learn more about source maps](https://developer.chrome.com/docs/devtools/javascript/source-maps/)."
+        },
+        "csp-xss": {
+          "score": 1,
+          "title": "Ensure CSP is effective against XSS attacks",
+          "description": "A strong Content Security Policy (CSP) significantly reduces the risk of cross-site scripting (XSS) attacks. [Learn how to use a CSP to prevent XSS](https://developer.chrome.com/docs/lighthouse/best-practices/csp-xss/)"
+        },
+        "has-hsts": {
+          "score": 1,
+          "title": "Use a strong HSTS policy",
+          "description": "Deployment of the HSTS header significantly reduces the risk of downgrading HTTP connections and eavesdropping attacks. A rollout in stages, starting with a low max-age is recommended. [Learn more about using a strong HSTS policy.](https://developer.chrome.com/docs/lighthouse/best-practices/has-hsts)"
+        },
+        "origin-isolation": {
+          "score": 1,
+          "title": "Ensure proper origin isolation with COOP",
+          "description": "The Cross-Origin-Opener-Policy (COOP) can be used to isolate the top-level window from other documents such as pop-ups. [Learn more about deploying the COOP header.](https://web.dev/articles/why-coop-coep#coop)"
+        },
+        "document-title": {
+          "score": 1,
+          "title": "Document has a `<title>` element",
+          "description": "The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search. [Learn more about document titles](https://dequeuniversity.com/rules/axe/4.10/document-title)."
+        },
+        "image-alt": {
+          "score": 1,
+          "title": "Image elements have `[alt]` attributes",
+          "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.10/image-alt)."
+        },
+        "doctype": {
+          "score": 1,
+          "title": "Page has the HTML doctype",
+          "description": "Specifying a doctype prevents the browser from switching to quirks-mode. [Learn more about the doctype declaration](https://developer.chrome.com/docs/lighthouse/best-practices/doctype/)."
+        },
+        "charset": {
+          "score": 1,
+          "title": "Properly defines charset",
+          "description": "A character encoding declaration is required. It can be done with a `<meta>` tag in the first 1024 bytes of the HTML or in the Content-Type HTTP response header. [Learn more about declaring the character encoding](https://developer.chrome.com/docs/lighthouse/best-practices/charset/)."
+        },
+        "geolocation-on-start": {
+          "score": 1,
+          "title": "Avoids requesting the geolocation permission on page load",
+          "description": "Users are mistrustful of or confused by sites that request their location without context. Consider tying the request to a user action instead. [Learn more about the geolocation permission](https://developer.chrome.com/docs/lighthouse/best-practices/geolocation-on-start/)."
+        },
+        "inspector-issues": {
+          "score": 0,
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "description": "Issues logged to the `Issues` panel in Chrome Devtools indicate unresolved problems. They can come from network request failures, insufficient security controls, and other browser concerns. Open up the Issues panel in Chrome DevTools for more details on each issue."
+        },
+        "js-libraries": {
+          "score": 1,
+          "title": "Detected JavaScript libraries",
+          "description": "All front-end JavaScript libraries detected on the page. [Learn more about this JavaScript library detection diagnostic audit](https://developer.chrome.com/docs/lighthouse/best-practices/js-libraries/)."
+        },
+        "notification-on-start": {
+          "score": 1,
+          "title": "Avoids requesting the notification permission on page load",
+          "description": "Users are mistrustful of or confused by sites that request to send notifications without context. Consider tying the request to user gestures instead. [Learn more about responsibly getting permission for notifications](https://developer.chrome.com/docs/lighthouse/best-practices/notification-on-start/)."
+        },
+        "paste-preventing-inputs": {
+          "score": 1,
+          "title": "Allows users to paste into input fields",
+          "description": "Preventing input pasting is a bad practice for the UX, and weakens security by blocking password managers.[Learn more about user-friendly input fields](https://developer.chrome.com/docs/lighthouse/best-practices/paste-preventing-inputs/)."
+        },
+        "meta-description": {
+          "score": 1,
+          "title": "Document has a meta description",
+          "description": "Meta descriptions may be included in search results to concisely summarize page content. [Learn more about the meta description](https://developer.chrome.com/docs/lighthouse/seo/meta-description/)."
+        },
+        "http-status-code": {
+          "score": 1,
+          "title": "Page has successful HTTP status code",
+          "description": "Pages with unsuccessful HTTP status codes may not be indexed properly. [Learn more about HTTP status codes](https://developer.chrome.com/docs/lighthouse/seo/http-status-code/)."
+        },
+        "font-size": {
+          "score": 1,
+          "title": "Document uses legible font sizes",
+          "description": "Font sizes less than 12px are too small to be legible and require mobile visitors to “pinch to zoom” in order to read. Strive to have >60% of page text ≥12px. [Learn more about legible font sizes](https://developer.chrome.com/docs/lighthouse/seo/font-size/)."
+        },
+        "link-text": {
+          "score": 0,
+          "title": "Links do not have descriptive text",
+          "description": "Descriptive link text helps search engines understand your content. [Learn how to make links more accessible](https://developer.chrome.com/docs/lighthouse/seo/link-text/)."
+        },
+        "crawlable-anchors": {
+          "score": 0,
+          "title": "Links are not crawlable",
+          "description": "Search engines may use `href` attributes on links to crawl websites. Ensure that the `href` attribute of anchor elements links to an appropriate destination, so more pages of the site can be discovered. [Learn how to make links crawlable](https://support.google.com/webmasters/answer/9112205)"
+        },
+        "is-crawlable": {
+          "score": 1,
+          "title": "Page isn’t blocked from indexing",
+          "description": "Search engines are unable to include your pages in search results if they don't have permission to crawl them. [Learn more about crawler directives](https://developer.chrome.com/docs/lighthouse/seo/is-crawlable/)."
+        },
+        "robots-txt": {
+          "score": 1,
+          "title": "robots.txt is valid",
+          "description": "If your robots.txt file is malformed, crawlers may not be able to understand how you want your website to be crawled or indexed. [Learn more about robots.txt](https://developer.chrome.com/docs/lighthouse/seo/invalid-robots-txt/)."
+        },
+        "hreflang": {
+          "score": 1,
+          "title": "Document has a valid `hreflang`",
+          "description": "hreflang links tell search engines what version of a page they should list in search results for a given language or region. [Learn more about `hreflang`](https://developer.chrome.com/docs/lighthouse/seo/hreflang/)."
+        },
+        "canonical": {
+          "score": null,
+          "title": "Document has a valid `rel=canonical`",
+          "description": "Canonical links suggest which URL to show in search results. [Learn more about canonical links](https://developer.chrome.com/docs/lighthouse/seo/canonical/)."
+        },
+        "structured-data": {
+          "score": null,
+          "title": "Structured data is valid",
+          "description": "Run the [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/) and the [Structured Data Linter](http://linter.structured-data.org/) to validate structured data. [Learn more about Structured Data](https://developer.chrome.com/docs/lighthouse/seo/structured-data/)."
+        }
+      }
+    },
+    "ssl": {
+      "valid": true,
+      "issuer": {
+        "C": "BE",
+        "O": "GlobalSign nv-sa",
+        "CN": "GlobalSign RSA OV SSL CA 2018"
+      },
+      "validFrom": "Jun  6 07:51:02 2024 GMT",
+      "validTo": "Jul  8 07:51:01 2025 GMT",
+      "daysUntilExpiration": 184,
+      "protocol": "TLSv1.3",
+      "cipher": {
+        "name": "TLS_AES_256_GCM_SHA384",
+        "standardName": "TLS_AES_256_GCM_SHA384",
+        "version": "TLSv1.3"
+      }
+    },
+    "links": {
+      "totalLinks": 135,
+      "uniqueLinks": 70,
+      "internalLinks": 59,
+      "externalLinks": 9,
+      "brokenLinks": [
+        {
+          "url": "https://quantmutual.com/NFOSchemeBrochure",
+          "statusCode": 404
+        },
+        {
+          "url": "http://cmweb:527//about-us/contact-us",
+          "error": "Connection failed: ENOTFOUND"
+        },
+        {
+          "url": "https://scores.gov.in/scores/Welcome.html",
+          "error": "Connection failed: ENOTFOUND"
+        },
+        {
+          "url": "http://www.cmots.com/",
+          "statusCode": 404
+        }
+      ],
+      "noFollowLinks": 0
+    },
+    "crawlability": {
+      "robotsTxt": {
+        "exists": true,
+        "content": "User-agent: *\r\nDisallow: /admin/",
+        "statusCode": 200
+      },
+      "sitemap": {
+        "exists": true,
+        "url": "https://quantmutual.com/sitemap.xml",
+        "statusCode": 200
+      }
+    }
+  },
+  {
+    "url": "https://quantmutual.com/about-us/quantgroup",
+    "timestamp": "2025-01-04T19:08:56.840Z",
+    "lighthouse": {
+      "scores": {
+        "seo": 83,
+        "bestPractices": 54
+      },
+      "audits": {
+        "is-on-https": {
+          "score": 0,
+          "title": "Does not use HTTPS",
+          "description": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more about HTTPS](https://developer.chrome.com/docs/lighthouse/pwa/is-on-https/)."
+        },
+        "redirects-http": {
+          "score": null,
+          "title": "Redirects HTTP traffic to HTTPS",
+          "description": "Make sure that you redirect all HTTP traffic to HTTPS in order to enable secure web features for all your users. [Learn more](https://developer.chrome.com/docs/lighthouse/pwa/redirects-http/)."
+        },
+        "viewport": {
+          "score": 1,
+          "title": "Has a `<meta name=\"viewport\">` tag with `width` or `initial-scale`",
+          "description": "A `<meta name=\"viewport\">` not only optimizes your app for mobile screen sizes, but also prevents [a 300 millisecond delay to user input](https://developer.chrome.com/blog/300ms-tap-delay-gone-away/). [Learn more about using the viewport meta tag](https://developer.chrome.com/docs/lighthouse/pwa/viewport/)."
+        },
+        "errors-in-console": {
+          "score": 0,
+          "title": "Browser errors were logged to the console",
+          "description": "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns. [Learn more about this errors in console diagnostic audit](https://developer.chrome.com/docs/lighthouse/best-practices/errors-in-console/)"
+        },
+        "image-aspect-ratio": {
+          "score": 1,
+          "title": "Displays images with correct aspect ratio",
+          "description": "Image display dimensions should match natural aspect ratio. [Learn more about image aspect ratio](https://developer.chrome.com/docs/lighthouse/best-practices/image-aspect-ratio/)."
+        },
+        "image-size-responsive": {
+          "score": 0,
+          "title": "Serves images with low resolution",
+          "description": "Image natural dimensions should be proportional to the display size and the pixel ratio to maximize image clarity. [Learn how to provide responsive images](https://web.dev/articles/serve-responsive-images)."
+        },
+        "deprecations": {
+          "score": 0,
+          "title": "Uses deprecated APIs",
+          "description": "Deprecated APIs will eventually be removed from the browser. [Learn more about deprecated APIs](https://developer.chrome.com/docs/lighthouse/best-practices/deprecations/)."
+        },
+        "third-party-cookies": {
+          "score": 1,
+          "title": "Avoids third-party cookies",
+          "description": "Chrome is moving towards a new experience that allows users to choose to browse without third-party cookies. [Learn more about third-party cookies](https://developers.google.com/privacy-sandbox/cookies)."
+        },
+        "valid-source-maps": {
+          "score": 1,
+          "title": "Page has valid source maps",
+          "description": "Source maps translate minified code to the original source code. This helps developers debug in production. In addition, Lighthouse is able to provide further insights. Consider deploying source maps to take advantage of these benefits. [Learn more about source maps](https://developer.chrome.com/docs/devtools/javascript/source-maps/)."
+        },
+        "csp-xss": {
+          "score": 1,
+          "title": "Ensure CSP is effective against XSS attacks",
+          "description": "A strong Content Security Policy (CSP) significantly reduces the risk of cross-site scripting (XSS) attacks. [Learn how to use a CSP to prevent XSS](https://developer.chrome.com/docs/lighthouse/best-practices/csp-xss/)"
+        },
+        "has-hsts": {
+          "score": 1,
+          "title": "Use a strong HSTS policy",
+          "description": "Deployment of the HSTS header significantly reduces the risk of downgrading HTTP connections and eavesdropping attacks. A rollout in stages, starting with a low max-age is recommended. [Learn more about using a strong HSTS policy.](https://developer.chrome.com/docs/lighthouse/best-practices/has-hsts)"
+        },
+        "origin-isolation": {
+          "score": 1,
+          "title": "Ensure proper origin isolation with COOP",
+          "description": "The Cross-Origin-Opener-Policy (COOP) can be used to isolate the top-level window from other documents such as pop-ups. [Learn more about deploying the COOP header.](https://web.dev/articles/why-coop-coep#coop)"
+        },
+        "document-title": {
+          "score": 1,
+          "title": "Document has a `<title>` element",
+          "description": "The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search. [Learn more about document titles](https://dequeuniversity.com/rules/axe/4.10/document-title)."
+        },
+        "image-alt": {
+          "score": 0,
+          "title": "Image elements do not have `[alt]` attributes",
+          "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.10/image-alt)."
+        },
+        "doctype": {
+          "score": 1,
+          "title": "Page has the HTML doctype",
+          "description": "Specifying a doctype prevents the browser from switching to quirks-mode. [Learn more about the doctype declaration](https://developer.chrome.com/docs/lighthouse/best-practices/doctype/)."
+        },
+        "charset": {
+          "score": 1,
+          "title": "Properly defines charset",
+          "description": "A character encoding declaration is required. It can be done with a `<meta>` tag in the first 1024 bytes of the HTML or in the Content-Type HTTP response header. [Learn more about declaring the character encoding](https://developer.chrome.com/docs/lighthouse/best-practices/charset/)."
+        },
+        "geolocation-on-start": {
+          "score": 1,
+          "title": "Avoids requesting the geolocation permission on page load",
+          "description": "Users are mistrustful of or confused by sites that request their location without context. Consider tying the request to a user action instead. [Learn more about the geolocation permission](https://developer.chrome.com/docs/lighthouse/best-practices/geolocation-on-start/)."
+        },
+        "inspector-issues": {
+          "score": 0,
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "description": "Issues logged to the `Issues` panel in Chrome Devtools indicate unresolved problems. They can come from network request failures, insufficient security controls, and other browser concerns. Open up the Issues panel in Chrome DevTools for more details on each issue."
+        },
+        "js-libraries": {
+          "score": 1,
+          "title": "Detected JavaScript libraries",
+          "description": "All front-end JavaScript libraries detected on the page. [Learn more about this JavaScript library detection diagnostic audit](https://developer.chrome.com/docs/lighthouse/best-practices/js-libraries/)."
+        },
+        "notification-on-start": {
+          "score": 1,
+          "title": "Avoids requesting the notification permission on page load",
+          "description": "Users are mistrustful of or confused by sites that request to send notifications without context. Consider tying the request to user gestures instead. [Learn more about responsibly getting permission for notifications](https://developer.chrome.com/docs/lighthouse/best-practices/notification-on-start/)."
+        },
+        "paste-preventing-inputs": {
+          "score": 1,
+          "title": "Allows users to paste into input fields",
+          "description": "Preventing input pasting is a bad practice for the UX, and weakens security by blocking password managers.[Learn more about user-friendly input fields](https://developer.chrome.com/docs/lighthouse/best-practices/paste-preventing-inputs/)."
+        },
+        "meta-description": {
+          "score": 1,
+          "title": "Document has a meta description",
+          "description": "Meta descriptions may be included in search results to concisely summarize page content. [Learn more about the meta description](https://developer.chrome.com/docs/lighthouse/seo/meta-description/)."
+        },
+        "http-status-code": {
+          "score": 1,
+          "title": "Page has successful HTTP status code",
+          "description": "Pages with unsuccessful HTTP status codes may not be indexed properly. [Learn more about HTTP status codes](https://developer.chrome.com/docs/lighthouse/seo/http-status-code/)."
+        },
+        "font-size": {
+          "score": 1,
+          "title": "Document uses legible font sizes",
+          "description": "Font sizes less than 12px are too small to be legible and require mobile visitors to “pinch to zoom” in order to read. Strive to have >60% of page text ≥12px. [Learn more about legible font sizes](https://developer.chrome.com/docs/lighthouse/seo/font-size/)."
+        },
+        "link-text": {
+          "score": 1,
+          "title": "Links have descriptive text",
+          "description": "Descriptive link text helps search engines understand your content. [Learn how to make links more accessible](https://developer.chrome.com/docs/lighthouse/seo/link-text/)."
+        },
+        "crawlable-anchors": {
+          "score": 0,
+          "title": "Links are not crawlable",
+          "description": "Search engines may use `href` attributes on links to crawl websites. Ensure that the `href` attribute of anchor elements links to an appropriate destination, so more pages of the site can be discovered. [Learn how to make links crawlable](https://support.google.com/webmasters/answer/9112205)"
+        },
+        "is-crawlable": {
+          "score": 1,
+          "title": "Page isn’t blocked from indexing",
+          "description": "Search engines are unable to include your pages in search results if they don't have permission to crawl them. [Learn more about crawler directives](https://developer.chrome.com/docs/lighthouse/seo/is-crawlable/)."
+        },
+        "robots-txt": {
+          "score": 1,
+          "title": "robots.txt is valid",
+          "description": "If your robots.txt file is malformed, crawlers may not be able to understand how you want your website to be crawled or indexed. [Learn more about robots.txt](https://developer.chrome.com/docs/lighthouse/seo/invalid-robots-txt/)."
+        },
+        "hreflang": {
+          "score": 1,
+          "title": "Document has a valid `hreflang`",
+          "description": "hreflang links tell search engines what version of a page they should list in search results for a given language or region. [Learn more about `hreflang`](https://developer.chrome.com/docs/lighthouse/seo/hreflang/)."
+        },
+        "canonical": {
+          "score": null,
+          "title": "Document has a valid `rel=canonical`",
+          "description": "Canonical links suggest which URL to show in search results. [Learn more about canonical links](https://developer.chrome.com/docs/lighthouse/seo/canonical/)."
+        },
+        "structured-data": {
+          "score": null,
+          "title": "Structured data is valid",
+          "description": "Run the [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/) and the [Structured Data Linter](http://linter.structured-data.org/) to validate structured data. [Learn more about Structured Data](https://developer.chrome.com/docs/lighthouse/seo/structured-data/)."
+        }
+      }
+    },
+    "ssl": {
+      "valid": true,
+      "daysUntilExpiration": null,
+      "protocol": "TLSv1.3",
+      "cipher": {
+        "name": "TLS_AES_256_GCM_SHA384",
+        "standardName": "TLS_AES_256_GCM_SHA384",
+        "version": "TLSv1.3"
+      }
+    },
+    "links": {
+      "totalLinks": 124,
+      "uniqueLinks": 59,
+      "internalLinks": 49,
+      "externalLinks": 8,
+      "brokenLinks": [
+        {
+          "url": "https://quantmutual.com/NFOSchemeBrochure",
+          "statusCode": 404
+        },
+        {
+          "url": "http://cmweb:527//about-us/contact-us",
+          "error": "Connection failed: ENOTFOUND"
+        },
+        {
+          "url": "https://scores.gov.in/scores/Welcome.html",
+          "error": "Connection failed: ENOTFOUND"
+        },
+        {
+          "url": "http://www.cmots.com/",
+          "statusCode": 404
+        }
+      ],
+      "noFollowLinks": 0
+    },
+    "crawlability": {
+      "robotsTxt": {
+        "exists": true,
+        "content": "User-agent: *\r\nDisallow: /admin/",
+        "statusCode": 200
+      },
+      "sitemap": {
+        "exists": true,
+        "url": "https://quantmutual.com/sitemap.xml",
+        "statusCode": 200
+      }
+    }
+  },
+  {
+    "url": "https://quantmutual.com/mutual-funds-india/funds",
+    "timestamp": "2025-01-04T19:09:06.603Z",
+    "lighthouse": {
+      "scores": {
+        "seo": 92,
+        "bestPractices": 54
+      },
+      "audits": {
+        "is-on-https": {
+          "score": 0,
+          "title": "Does not use HTTPS",
+          "description": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more about HTTPS](https://developer.chrome.com/docs/lighthouse/pwa/is-on-https/)."
+        },
+        "redirects-http": {
+          "score": null,
+          "title": "Redirects HTTP traffic to HTTPS",
+          "description": "Make sure that you redirect all HTTP traffic to HTTPS in order to enable secure web features for all your users. [Learn more](https://developer.chrome.com/docs/lighthouse/pwa/redirects-http/)."
+        },
+        "viewport": {
+          "score": 1,
+          "title": "Has a `<meta name=\"viewport\">` tag with `width` or `initial-scale`",
+          "description": "A `<meta name=\"viewport\">` not only optimizes your app for mobile screen sizes, but also prevents [a 300 millisecond delay to user input](https://developer.chrome.com/blog/300ms-tap-delay-gone-away/). [Learn more about using the viewport meta tag](https://developer.chrome.com/docs/lighthouse/pwa/viewport/)."
+        },
+        "errors-in-console": {
+          "score": 0,
+          "title": "Browser errors were logged to the console",
+          "description": "Errors logged to the console indicate unresolved problems. They can come from network request failures and other browser concerns. [Learn more about this errors in console diagnostic audit](https://developer.chrome.com/docs/lighthouse/best-practices/errors-in-console/)"
+        },
+        "image-aspect-ratio": {
+          "score": 1,
+          "title": "Displays images with correct aspect ratio",
+          "description": "Image display dimensions should match natural aspect ratio. [Learn more about image aspect ratio](https://developer.chrome.com/docs/lighthouse/best-practices/image-aspect-ratio/)."
+        },
+        "image-size-responsive": {
+          "score": 0,
+          "title": "Serves images with low resolution",
+          "description": "Image natural dimensions should be proportional to the display size and the pixel ratio to maximize image clarity. [Learn how to provide responsive images](https://web.dev/articles/serve-responsive-images)."
+        },
+        "deprecations": {
+          "score": 0,
+          "title": "Uses deprecated APIs",
+          "description": "Deprecated APIs will eventually be removed from the browser. [Learn more about deprecated APIs](https://developer.chrome.com/docs/lighthouse/best-practices/deprecations/)."
+        },
+        "third-party-cookies": {
+          "score": 1,
+          "title": "Avoids third-party cookies",
+          "description": "Chrome is moving towards a new experience that allows users to choose to browse without third-party cookies. [Learn more about third-party cookies](https://developers.google.com/privacy-sandbox/cookies)."
+        },
+        "valid-source-maps": {
+          "score": 1,
+          "title": "Page has valid source maps",
+          "description": "Source maps translate minified code to the original source code. This helps developers debug in production. In addition, Lighthouse is able to provide further insights. Consider deploying source maps to take advantage of these benefits. [Learn more about source maps](https://developer.chrome.com/docs/devtools/javascript/source-maps/)."
+        },
+        "csp-xss": {
+          "score": 1,
+          "title": "Ensure CSP is effective against XSS attacks",
+          "description": "A strong Content Security Policy (CSP) significantly reduces the risk of cross-site scripting (XSS) attacks. [Learn how to use a CSP to prevent XSS](https://developer.chrome.com/docs/lighthouse/best-practices/csp-xss/)"
+        },
+        "has-hsts": {
+          "score": 1,
+          "title": "Use a strong HSTS policy",
+          "description": "Deployment of the HSTS header significantly reduces the risk of downgrading HTTP connections and eavesdropping attacks. A rollout in stages, starting with a low max-age is recommended. [Learn more about using a strong HSTS policy.](https://developer.chrome.com/docs/lighthouse/best-practices/has-hsts)"
+        },
+        "origin-isolation": {
+          "score": 1,
+          "title": "Ensure proper origin isolation with COOP",
+          "description": "The Cross-Origin-Opener-Policy (COOP) can be used to isolate the top-level window from other documents such as pop-ups. [Learn more about deploying the COOP header.](https://web.dev/articles/why-coop-coep#coop)"
+        },
+        "document-title": {
+          "score": 1,
+          "title": "Document has a `<title>` element",
+          "description": "The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search. [Learn more about document titles](https://dequeuniversity.com/rules/axe/4.10/document-title)."
+        },
+        "image-alt": {
+          "score": 1,
+          "title": "Image elements have `[alt]` attributes",
+          "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more about the `alt` attribute](https://dequeuniversity.com/rules/axe/4.10/image-alt)."
+        },
+        "doctype": {
+          "score": 1,
+          "title": "Page has the HTML doctype",
+          "description": "Specifying a doctype prevents the browser from switching to quirks-mode. [Learn more about the doctype declaration](https://developer.chrome.com/docs/lighthouse/best-practices/doctype/)."
+        },
+        "charset": {
+          "score": 1,
+          "title": "Properly defines charset",
+          "description": "A character encoding declaration is required. It can be done with a `<meta>` tag in the first 1024 bytes of the HTML or in the Content-Type HTTP response header. [Learn more about declaring the character encoding](https://developer.chrome.com/docs/lighthouse/best-practices/charset/)."
+        },
+        "geolocation-on-start": {
+          "score": 1,
+          "title": "Avoids requesting the geolocation permission on page load",
+          "description": "Users are mistrustful of or confused by sites that request their location without context. Consider tying the request to a user action instead. [Learn more about the geolocation permission](https://developer.chrome.com/docs/lighthouse/best-practices/geolocation-on-start/)."
+        },
+        "inspector-issues": {
+          "score": 0,
+          "title": "Issues were logged in the `Issues` panel in Chrome Devtools",
+          "description": "Issues logged to the `Issues` panel in Chrome Devtools indicate unresolved problems. They can come from network request failures, insufficient security controls, and other browser concerns. Open up the Issues panel in Chrome DevTools for more details on each issue."
+        },
+        "js-libraries": {
+          "score": 1,
+          "title": "Detected JavaScript libraries",
+          "description": "All front-end JavaScript libraries detected on the page. [Learn more about this JavaScript library detection diagnostic audit](https://developer.chrome.com/docs/lighthouse/best-practices/js-libraries/)."
+        },
+        "notification-on-start": {
+          "score": 1,
+          "title": "Avoids requesting the notification permission on page load",
+          "description": "Users are mistrustful of or confused by sites that request to send notifications without context. Consider tying the request to user gestures instead. [Learn more about responsibly getting permission for notifications](https://developer.chrome.com/docs/lighthouse/best-practices/notification-on-start/)."
+        },
+        "paste-preventing-inputs": {
+          "score": 1,
+          "title": "Allows users to paste into input fields",
+          "description": "Preventing input pasting is a bad practice for the UX, and weakens security by blocking password managers.[Learn more about user-friendly input fields](https://developer.chrome.com/docs/lighthouse/best-practices/paste-preventing-inputs/)."
+        },
+        "meta-description": {
+          "score": 1,
+          "title": "Document has a meta description",
+          "description": "Meta descriptions may be included in search results to concisely summarize page content. [Learn more about the meta description](https://developer.chrome.com/docs/lighthouse/seo/meta-description/)."
+        },
+        "http-status-code": {
+          "score": 1,
+          "title": "Page has successful HTTP status code",
+          "description": "Pages with unsuccessful HTTP status codes may not be indexed properly. [Learn more about HTTP status codes](https://developer.chrome.com/docs/lighthouse/seo/http-status-code/)."
+        },
+        "font-size": {
+          "score": 1,
+          "title": "Document uses legible font sizes",
+          "description": "Font sizes less than 12px are too small to be legible and require mobile visitors to “pinch to zoom” in order to read. Strive to have >60% of page text ≥12px. [Learn more about legible font sizes](https://developer.chrome.com/docs/lighthouse/seo/font-size/)."
+        },
+        "link-text": {
+          "score": 1,
+          "title": "Links have descriptive text",
+          "description": "Descriptive link text helps search engines understand your content. [Learn how to make links more accessible](https://developer.chrome.com/docs/lighthouse/seo/link-text/)."
+        },
+        "crawlable-anchors": {
+          "score": 0,
+          "title": "Links are not crawlable",
+          "description": "Search engines may use `href` attributes on links to crawl websites. Ensure that the `href` attribute of anchor elements links to an appropriate destination, so more pages of the site can be discovered. [Learn how to make links crawlable](https://support.google.com/webmasters/answer/9112205)"
+        },
+        "is-crawlable": {
+          "score": 1,
+          "title": "Page isn’t blocked from indexing",
+          "description": "Search engines are unable to include your pages in search results if they don't have permission to crawl them. [Learn more about crawler directives](https://developer.chrome.com/docs/lighthouse/seo/is-crawlable/)."
+        },
+        "robots-txt": {
+          "score": 1,
+          "title": "robots.txt is valid",
+          "description": "If your robots.txt file is malformed, crawlers may not be able to understand how you want your website to be crawled or indexed. [Learn more about robots.txt](https://developer.chrome.com/docs/lighthouse/seo/invalid-robots-txt/)."
+        },
+        "hreflang": {
+          "score": 1,
+          "title": "Document has a valid `hreflang`",
+          "description": "hreflang links tell search engines what version of a page they should list in search results for a given language or region. [Learn more about `hreflang`](https://developer.chrome.com/docs/lighthouse/seo/hreflang/)."
+        },
+        "canonical": {
+          "score": null,
+          "title": "Document has a valid `rel=canonical`",
+          "description": "Canonical links suggest which URL to show in search results. [Learn more about canonical links](https://developer.chrome.com/docs/lighthouse/seo/canonical/)."
+        },
+        "structured-data": {
+          "score": null,
+          "title": "Structured data is valid",
+          "description": "Run the [Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool/) and the [Structured Data Linter](http://linter.structured-data.org/) to validate structured data. [Learn more about Structured Data](https://developer.chrome.com/docs/lighthouse/seo/structured-data/)."
+        }
+      }
+    },
+    "ssl": {
+      "valid": true,
+      "daysUntilExpiration": null,
+      "protocol": "TLSv1.3",
+      "cipher": {
+        "name": "TLS_AES_256_GCM_SHA384",
+        "standardName": "TLS_AES_256_GCM_SHA384",
+        "version": "TLSv1.3"
+      }
+    },
+    "links": {
+      "totalLinks": 156,
+      "uniqueLinks": 86,
+      "internalLinks": 76,
+      "externalLinks": 8,
+      "brokenLinks": [
+        {
+          "url": "https://quantmutual.com/NFOSchemeBrochure",
+          "statusCode": 404
+        },
+        {
+          "url": "http://cmweb:527//about-us/contact-us",
+          "error": "Connection failed: ENOTFOUND"
+        },
+        {
+          "url": "https://scores.gov.in/scores/Welcome.html",
+          "error": "Connection failed: ENOTFOUND"
+        },
+        {
+          "url": "http://www.cmots.com/",
+          "statusCode": 404
+        }
+      ],
+      "noFollowLinks": 0
+    },
+    "crawlability": {
+      "robotsTxt": {
+        "exists": true,
+        "content": "User-agent: *\r\nDisallow: /admin/",
+        "statusCode": 200
+      },
+      "sitemap": {
+        "exists": true,
+        "url": "https://quantmutual.com/sitemap.xml",
+        "statusCode": 200
+      }
+    }
+  }
+]
