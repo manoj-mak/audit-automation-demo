@@ -1,16 +1,16 @@
 [
   {
-    "url": "https://quantmutual.com/",
-    "timestamp": "2025-01-04T19:08:47.572Z",
+    "url": "https://www.shoppersstop.com/",
+    "timestamp": "2025-01-06T13:56:49.772Z",
     "lighthouse": {
       "scores": {
-        "seo": 83,
-        "bestPractices": 54
+        "seo": 92,
+        "bestPractices": 57
       },
       "audits": {
         "is-on-https": {
-          "score": 0,
-          "title": "Does not use HTTPS",
+          "score": 1,
+          "title": "Uses HTTPS",
           "description": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more about HTTPS](https://developer.chrome.com/docs/lighthouse/pwa/is-on-https/)."
         },
         "redirects-http": {
@@ -34,8 +34,8 @@
           "description": "Image display dimensions should match natural aspect ratio. [Learn more about image aspect ratio](https://developer.chrome.com/docs/lighthouse/best-practices/image-aspect-ratio/)."
         },
         "image-size-responsive": {
-          "score": 0,
-          "title": "Serves images with low resolution",
+          "score": 1,
+          "title": "Serves images with appropriate resolution",
           "description": "Image natural dimensions should be proportional to the display size and the pixel ratio to maximize image clarity. [Learn how to provide responsive images](https://web.dev/articles/serve-responsive-images)."
         },
         "deprecations": {
@@ -44,8 +44,8 @@
           "description": "Deprecated APIs will eventually be removed from the browser. [Learn more about deprecated APIs](https://developer.chrome.com/docs/lighthouse/best-practices/deprecations/)."
         },
         "third-party-cookies": {
-          "score": 1,
-          "title": "Avoids third-party cookies",
+          "score": 0,
+          "title": "Uses third-party cookies",
           "description": "Chrome is moving towards a new experience that allows users to choose to browse without third-party cookies. [Learn more about third-party cookies](https://developers.google.com/privacy-sandbox/cookies)."
         },
         "valid-source-maps": {
@@ -129,8 +129,8 @@
           "description": "Font sizes less than 12px are too small to be legible and require mobile visitors to “pinch to zoom” in order to read. Strive to have >60% of page text ≥12px. [Learn more about legible font sizes](https://developer.chrome.com/docs/lighthouse/seo/font-size/)."
         },
         "link-text": {
-          "score": 0,
-          "title": "Links do not have descriptive text",
+          "score": 1,
+          "title": "Links have descriptive text",
           "description": "Descriptive link text helps search engines understand your content. [Learn how to make links more accessible](https://developer.chrome.com/docs/lighthouse/seo/link-text/)."
         },
         "crawlable-anchors": {
@@ -154,7 +154,7 @@
           "description": "hreflang links tell search engines what version of a page they should list in search results for a given language or region. [Learn more about `hreflang`](https://developer.chrome.com/docs/lighthouse/seo/hreflang/)."
         },
         "canonical": {
-          "score": null,
+          "score": 1,
           "title": "Document has a valid `rel=canonical`",
           "description": "Canonical links suggest which URL to show in search results. [Learn more about canonical links](https://developer.chrome.com/docs/lighthouse/seo/canonical/)."
         },
@@ -168,70 +168,53 @@
     "ssl": {
       "valid": true,
       "issuer": {
-        "C": "BE",
-        "O": "GlobalSign nv-sa",
-        "CN": "GlobalSign RSA OV SSL CA 2018"
+        "C": "US",
+        "O": "Let's Encrypt",
+        "CN": "R10"
       },
-      "validFrom": "Jun  6 07:51:02 2024 GMT",
-      "validTo": "Jul  8 07:51:01 2025 GMT",
-      "daysUntilExpiration": 184,
+      "validFrom": "Nov  7 21:48:04 2024 GMT",
+      "validTo": "Feb  5 21:48:03 2025 GMT",
+      "daysUntilExpiration": 30,
       "protocol": "TLSv1.3",
       "cipher": {
-        "name": "TLS_AES_256_GCM_SHA384",
-        "standardName": "TLS_AES_256_GCM_SHA384",
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
         "version": "TLSv1.3"
       }
     },
     "links": {
-      "totalLinks": 135,
+      "totalLinks": 93,
       "uniqueLinks": 70,
-      "internalLinks": 59,
-      "externalLinks": 9,
-      "brokenLinks": [
-        {
-          "url": "https://quantmutual.com/NFOSchemeBrochure",
-          "statusCode": 404
-        },
-        {
-          "url": "http://cmweb:527//about-us/contact-us",
-          "error": "Connection failed: ENOTFOUND"
-        },
-        {
-          "url": "https://scores.gov.in/scores/Welcome.html",
-          "error": "Connection failed: ENOTFOUND"
-        },
-        {
-          "url": "http://www.cmots.com/",
-          "statusCode": 404
-        }
-      ],
+      "internalLinks": 63,
+      "externalLinks": 6,
+      "brokenLinks": [],
       "noFollowLinks": 0
     },
     "crawlability": {
       "robotsTxt": {
         "exists": true,
-        "content": "User-agent: *\r\nDisallow: /admin/",
+        "content": "# For all robots\nUser-agent: *\n\n# Block access to specific groups of pages\nDisallow: /cart\nDisallow: /checkout\nDisallow: /account\nAllow: /cartier*\n\nDisallow: /search\n\nDisallow: /en/search\nDisallow: /*?showType\nDisallow: /*?categoryCode\nDisallow: /*?sort\nDisallow: /*?pagetype\nDisallow: /*?q\nAllow: /*?PageSpeed\nDisallow: /*?currentPosition\nDisallow: /*?text&showType&sort\n\nDisallow: /ssladmin/\nDisallow: /sslomm/\n\nDisallow: /&s2=ym\nDisallow: /catalogservlet?categoryid=\nDisallow: /checkout/multi/\nDisallow: /crm.\nDisallow: /r.srvtrck.com/v1/\nDisallow: /wishlist/addorremovewishlist/\n\n# Allow search crawlers to discover the sitemap\nSitemap: https://www.shoppersstop.com/sitemap.xml\n\n# Block CazoodleBot as it does not present correct accept content headers\nUser-agent: CazoodleBot\nAllow: /\n\n# Block MJ12bot as it is just noise\nUser-agent: MJ12bot\nDisallow: /\n\n# Block dotbot as it cannot parse base urls properly\nUser-agent: dotbot/1.0\nAllow: /\n\n# Block Gigabot\nUser-agent: Gigabot\nDisallow: /\n\n# Block EtaoSpider as ecommerence engine\nUser-agent: EtaoSpider\nAllow: /\n\n# Unsafe robots to disallow\n\nUser-agent: CopyRightCheck\nDisallow: /\n\nUser-agent: Offline Explorer\nDisallow: /\n\nUser-agent: QueryN Metasearch\nDisallow: /\n\nUser-agent: True_Robot\nAllow: /\n\nUser-agent: AhrefsBot\nAllow: /\n\nUser-agent: Yandex\nDisallow: /",
         "statusCode": 200
       },
       "sitemap": {
         "exists": true,
-        "url": "https://quantmutual.com/sitemap.xml",
+        "url": "https://www.shoppersstop.com/sitemap.xml",
         "statusCode": 200
       }
     }
   },
   {
-    "url": "https://quantmutual.com/about-us/quantgroup",
-    "timestamp": "2025-01-04T19:08:56.840Z",
+    "url": "https://www.shoppersstop.com/category/men",
+    "timestamp": "2025-01-06T13:57:06.198Z",
     "lighthouse": {
       "scores": {
-        "seo": 83,
-        "bestPractices": 54
+        "seo": 85,
+        "bestPractices": 57
       },
       "audits": {
         "is-on-https": {
-          "score": 0,
-          "title": "Does not use HTTPS",
+          "score": 1,
+          "title": "Uses HTTPS",
           "description": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more about HTTPS](https://developer.chrome.com/docs/lighthouse/pwa/is-on-https/)."
         },
         "redirects-http": {
@@ -255,8 +238,8 @@
           "description": "Image display dimensions should match natural aspect ratio. [Learn more about image aspect ratio](https://developer.chrome.com/docs/lighthouse/best-practices/image-aspect-ratio/)."
         },
         "image-size-responsive": {
-          "score": 0,
-          "title": "Serves images with low resolution",
+          "score": 1,
+          "title": "Serves images with appropriate resolution",
           "description": "Image natural dimensions should be proportional to the display size and the pixel ratio to maximize image clarity. [Learn how to provide responsive images](https://web.dev/articles/serve-responsive-images)."
         },
         "deprecations": {
@@ -265,8 +248,8 @@
           "description": "Deprecated APIs will eventually be removed from the browser. [Learn more about deprecated APIs](https://developer.chrome.com/docs/lighthouse/best-practices/deprecations/)."
         },
         "third-party-cookies": {
-          "score": 1,
-          "title": "Avoids third-party cookies",
+          "score": 0,
+          "title": "Uses third-party cookies",
           "description": "Chrome is moving towards a new experience that allows users to choose to browse without third-party cookies. [Learn more about third-party cookies](https://developers.google.com/privacy-sandbox/cookies)."
         },
         "valid-source-maps": {
@@ -375,7 +358,7 @@
           "description": "hreflang links tell search engines what version of a page they should list in search results for a given language or region. [Learn more about `hreflang`](https://developer.chrome.com/docs/lighthouse/seo/hreflang/)."
         },
         "canonical": {
-          "score": null,
+          "score": 1,
           "title": "Document has a valid `rel=canonical`",
           "description": "Canonical links suggest which URL to show in search results. [Learn more about canonical links](https://developer.chrome.com/docs/lighthouse/seo/canonical/)."
         },
@@ -391,61 +374,44 @@
       "daysUntilExpiration": null,
       "protocol": "TLSv1.3",
       "cipher": {
-        "name": "TLS_AES_256_GCM_SHA384",
-        "standardName": "TLS_AES_256_GCM_SHA384",
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
         "version": "TLSv1.3"
       }
     },
     "links": {
-      "totalLinks": 124,
-      "uniqueLinks": 59,
-      "internalLinks": 49,
-      "externalLinks": 8,
-      "brokenLinks": [
-        {
-          "url": "https://quantmutual.com/NFOSchemeBrochure",
-          "statusCode": 404
-        },
-        {
-          "url": "http://cmweb:527//about-us/contact-us",
-          "error": "Connection failed: ENOTFOUND"
-        },
-        {
-          "url": "https://scores.gov.in/scores/Welcome.html",
-          "error": "Connection failed: ENOTFOUND"
-        },
-        {
-          "url": "http://www.cmots.com/",
-          "statusCode": 404
-        }
-      ],
+      "totalLinks": 110,
+      "uniqueLinks": 91,
+      "internalLinks": 84,
+      "externalLinks": 6,
+      "brokenLinks": [],
       "noFollowLinks": 0
     },
     "crawlability": {
       "robotsTxt": {
         "exists": true,
-        "content": "User-agent: *\r\nDisallow: /admin/",
+        "content": "# For all robots\nUser-agent: *\n\n# Block access to specific groups of pages\nDisallow: /cart\nDisallow: /checkout\nDisallow: /account\nAllow: /cartier*\n\nDisallow: /search\n\nDisallow: /en/search\nDisallow: /*?showType\nDisallow: /*?categoryCode\nDisallow: /*?sort\nDisallow: /*?pagetype\nDisallow: /*?q\nAllow: /*?PageSpeed\nDisallow: /*?currentPosition\nDisallow: /*?text&showType&sort\n\nDisallow: /ssladmin/\nDisallow: /sslomm/\n\nDisallow: /&s2=ym\nDisallow: /catalogservlet?categoryid=\nDisallow: /checkout/multi/\nDisallow: /crm.\nDisallow: /r.srvtrck.com/v1/\nDisallow: /wishlist/addorremovewishlist/\n\n# Allow search crawlers to discover the sitemap\nSitemap: https://www.shoppersstop.com/sitemap.xml\n\n# Block CazoodleBot as it does not present correct accept content headers\nUser-agent: CazoodleBot\nAllow: /\n\n# Block MJ12bot as it is just noise\nUser-agent: MJ12bot\nDisallow: /\n\n# Block dotbot as it cannot parse base urls properly\nUser-agent: dotbot/1.0\nAllow: /\n\n# Block Gigabot\nUser-agent: Gigabot\nDisallow: /\n\n# Block EtaoSpider as ecommerence engine\nUser-agent: EtaoSpider\nAllow: /\n\n# Unsafe robots to disallow\n\nUser-agent: CopyRightCheck\nDisallow: /\n\nUser-agent: Offline Explorer\nDisallow: /\n\nUser-agent: QueryN Metasearch\nDisallow: /\n\nUser-agent: True_Robot\nAllow: /\n\nUser-agent: AhrefsBot\nAllow: /\n\nUser-agent: Yandex\nDisallow: /",
         "statusCode": 200
       },
       "sitemap": {
         "exists": true,
-        "url": "https://quantmutual.com/sitemap.xml",
+        "url": "https://www.shoppersstop.com/sitemap.xml",
         "statusCode": 200
       }
     }
   },
   {
-    "url": "https://quantmutual.com/mutual-funds-india/funds",
-    "timestamp": "2025-01-04T19:09:06.603Z",
+    "url": "https://www.shoppersstop.com/category/women",
+    "timestamp": "2025-01-06T13:57:17.938Z",
     "lighthouse": {
       "scores": {
         "seo": 92,
-        "bestPractices": 54
+        "bestPractices": 57
       },
       "audits": {
         "is-on-https": {
-          "score": 0,
-          "title": "Does not use HTTPS",
+          "score": 1,
+          "title": "Uses HTTPS",
           "description": "All sites should be protected with HTTPS, even ones that don't handle sensitive data. This includes avoiding [mixed content](https://developers.google.com/web/fundamentals/security/prevent-mixed-content/what-is-mixed-content), where some resources are loaded over HTTP despite the initial request being served over HTTPS. HTTPS prevents intruders from tampering with or passively listening in on the communications between your app and your users, and is a prerequisite for HTTP/2 and many new web platform APIs. [Learn more about HTTPS](https://developer.chrome.com/docs/lighthouse/pwa/is-on-https/)."
         },
         "redirects-http": {
@@ -469,8 +435,8 @@
           "description": "Image display dimensions should match natural aspect ratio. [Learn more about image aspect ratio](https://developer.chrome.com/docs/lighthouse/best-practices/image-aspect-ratio/)."
         },
         "image-size-responsive": {
-          "score": 0,
-          "title": "Serves images with low resolution",
+          "score": 1,
+          "title": "Serves images with appropriate resolution",
           "description": "Image natural dimensions should be proportional to the display size and the pixel ratio to maximize image clarity. [Learn how to provide responsive images](https://web.dev/articles/serve-responsive-images)."
         },
         "deprecations": {
@@ -479,8 +445,8 @@
           "description": "Deprecated APIs will eventually be removed from the browser. [Learn more about deprecated APIs](https://developer.chrome.com/docs/lighthouse/best-practices/deprecations/)."
         },
         "third-party-cookies": {
-          "score": 1,
-          "title": "Avoids third-party cookies",
+          "score": 0,
+          "title": "Uses third-party cookies",
           "description": "Chrome is moving towards a new experience that allows users to choose to browse without third-party cookies. [Learn more about third-party cookies](https://developers.google.com/privacy-sandbox/cookies)."
         },
         "valid-source-maps": {
@@ -589,7 +555,7 @@
           "description": "hreflang links tell search engines what version of a page they should list in search results for a given language or region. [Learn more about `hreflang`](https://developer.chrome.com/docs/lighthouse/seo/hreflang/)."
         },
         "canonical": {
-          "score": null,
+          "score": 1,
           "title": "Document has a valid `rel=canonical`",
           "description": "Canonical links suggest which URL to show in search results. [Learn more about canonical links](https://developer.chrome.com/docs/lighthouse/seo/canonical/)."
         },
@@ -605,45 +571,28 @@
       "daysUntilExpiration": null,
       "protocol": "TLSv1.3",
       "cipher": {
-        "name": "TLS_AES_256_GCM_SHA384",
-        "standardName": "TLS_AES_256_GCM_SHA384",
+        "name": "TLS_AES_128_GCM_SHA256",
+        "standardName": "TLS_AES_128_GCM_SHA256",
         "version": "TLSv1.3"
       }
     },
     "links": {
-      "totalLinks": 156,
-      "uniqueLinks": 86,
-      "internalLinks": 76,
-      "externalLinks": 8,
-      "brokenLinks": [
-        {
-          "url": "https://quantmutual.com/NFOSchemeBrochure",
-          "statusCode": 404
-        },
-        {
-          "url": "http://cmweb:527//about-us/contact-us",
-          "error": "Connection failed: ENOTFOUND"
-        },
-        {
-          "url": "https://scores.gov.in/scores/Welcome.html",
-          "error": "Connection failed: ENOTFOUND"
-        },
-        {
-          "url": "http://www.cmots.com/",
-          "statusCode": 404
-        }
-      ],
+      "totalLinks": 85,
+      "uniqueLinks": 66,
+      "internalLinks": 59,
+      "externalLinks": 6,
+      "brokenLinks": [],
       "noFollowLinks": 0
     },
     "crawlability": {
       "robotsTxt": {
         "exists": true,
-        "content": "User-agent: *\r\nDisallow: /admin/",
+        "content": "# For all robots\nUser-agent: *\n\n# Block access to specific groups of pages\nDisallow: /cart\nDisallow: /checkout\nDisallow: /account\nAllow: /cartier*\n\nDisallow: /search\n\nDisallow: /en/search\nDisallow: /*?showType\nDisallow: /*?categoryCode\nDisallow: /*?sort\nDisallow: /*?pagetype\nDisallow: /*?q\nAllow: /*?PageSpeed\nDisallow: /*?currentPosition\nDisallow: /*?text&showType&sort\n\nDisallow: /ssladmin/\nDisallow: /sslomm/\n\nDisallow: /&s2=ym\nDisallow: /catalogservlet?categoryid=\nDisallow: /checkout/multi/\nDisallow: /crm.\nDisallow: /r.srvtrck.com/v1/\nDisallow: /wishlist/addorremovewishlist/\n\n# Allow search crawlers to discover the sitemap\nSitemap: https://www.shoppersstop.com/sitemap.xml\n\n# Block CazoodleBot as it does not present correct accept content headers\nUser-agent: CazoodleBot\nAllow: /\n\n# Block MJ12bot as it is just noise\nUser-agent: MJ12bot\nDisallow: /\n\n# Block dotbot as it cannot parse base urls properly\nUser-agent: dotbot/1.0\nAllow: /\n\n# Block Gigabot\nUser-agent: Gigabot\nDisallow: /\n\n# Block EtaoSpider as ecommerence engine\nUser-agent: EtaoSpider\nAllow: /\n\n# Unsafe robots to disallow\n\nUser-agent: CopyRightCheck\nDisallow: /\n\nUser-agent: Offline Explorer\nDisallow: /\n\nUser-agent: QueryN Metasearch\nDisallow: /\n\nUser-agent: True_Robot\nAllow: /\n\nUser-agent: AhrefsBot\nAllow: /\n\nUser-agent: Yandex\nDisallow: /",
         "statusCode": 200
       },
       "sitemap": {
         "exists": true,
-        "url": "https://quantmutual.com/sitemap.xml",
+        "url": "https://www.shoppersstop.com/sitemap.xml",
         "statusCode": 200
       }
     }

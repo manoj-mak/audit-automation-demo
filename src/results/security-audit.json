@@ -4,40 +4,42 @@
     "completedAudits": 3,
     "failedAudits": 0,
     "averageSecurityScore": 80,
-    "criticalIssues": 0,
+    "criticalIssues": 2,
     "commonIssues": [
-      "Implement strict CSP without unsafe-inline/unsafe-eval",
-      "Set X-Content-Type-Options to nosniff",
       "Implement restrictive Permissions-Policy",
       "Set Cross-Origin-Opener-Policy to same-origin"
     ]
   },
   "results": [
     {
-      "url": "https://quantmutual.com/",
-      "timestamp": "2025-01-04T19:09:09.828Z",
-      "securityScore": 80,
+      "url": "https://www.shoppersstop.com/",
+      "timestamp": "2025-01-06T13:57:28.383Z",
+      "securityScore": 90,
       "findings": {
         "securityHeaders": {
           "present": {
             "Strict-Transport-Security": {
-              "value": "max-age=31536000",
+              "value": "max-age=31536000; includeSubDomains;",
+              "proper": true
+            },
+            "Content-Security-Policy": {
+              "value": "upgrade-insecure-requests",
               "proper": true
             },
             "X-Frame-Options": {
               "value": "SAMEORIGIN",
               "proper": true
+            },
+            "X-Content-Type-Options": {
+              "value": "nosniff",
+              "proper": true
             }
           },
           "missing": [
-            "Content-Security-Policy",
-            "X-Content-Type-Options",
             "Permissions-Policy",
             "Cross-Origin-Opener-Policy"
           ],
           "recommendations": [
-            "Implement strict CSP without unsafe-inline/unsafe-eval",
-            "Set X-Content-Type-Options to nosniff",
             "Implement restrictive Permissions-Policy",
             "Set Cross-Origin-Opener-Policy to same-origin"
           ]
@@ -52,75 +54,7 @@
             "secure": true
           },
           "cipher": {
-            "name": "TLS_AES_256_GCM_SHA384",
-            "secure": true
-          },
-          "recommendations": []
-        },
-        "vulnerabilities": {
-          "xss": [],
-          "sqli": [],
-          "openRedirect": [],
-          "recommendations": []
-        },
-        "authAnalysis": {
-          "findings": [],
-          "recommendations": []
-        },
-        "exposedData": {
-          "exposedPaths": [],
-          "sensitiveFiles": [
-            {
-              "type": "Email",
-              "count": 8
-            }
-          ],
-          "recommendations": [
-            "Remove sensitive data from client-side code"
-          ]
-        }
-      }
-    },
-    {
-      "url": "https://quantmutual.com/about-us/quantgroup",
-      "timestamp": "2025-01-04T19:09:12.615Z",
-      "securityScore": 80,
-      "findings": {
-        "securityHeaders": {
-          "present": {
-            "Strict-Transport-Security": {
-              "value": "max-age=31536000",
-              "proper": true
-            },
-            "X-Frame-Options": {
-              "value": "SAMEORIGIN",
-              "proper": true
-            }
-          },
-          "missing": [
-            "Content-Security-Policy",
-            "X-Content-Type-Options",
-            "Permissions-Policy",
-            "Cross-Origin-Opener-Policy"
-          ],
-          "recommendations": [
-            "Implement strict CSP without unsafe-inline/unsafe-eval",
-            "Set X-Content-Type-Options to nosniff",
-            "Implement restrictive Permissions-Policy",
-            "Set Cross-Origin-Opener-Policy to same-origin"
-          ]
-        },
-        "sslAnalysis": {
-          "certificate": {
-            "valid": true,
-            "daysUntilExpiration": null
-          },
-          "protocol": {
-            "name": "TLSv1.3",
-            "secure": true
-          },
-          "cipher": {
-            "name": "TLS_AES_256_GCM_SHA384",
+            "name": "TLS_AES_128_GCM_SHA256",
             "secure": true
           },
           "recommendations": []
@@ -138,55 +72,18 @@
         "exposedData": {
           "exposedPaths": [
             {
-              "path": "/.git",
-              "status": 200,
-              "contentLength": "11915"
-            },
-            {
-              "path": "/.env",
-              "status": 200,
-              "contentLength": "11916"
-            },
-            {
-              "path": "/config",
-              "status": 200,
-              "contentLength": "11918"
-            },
-            {
-              "path": "/backup",
-              "status": 200,
-              "contentLength": "11918"
-            },
-            {
-              "path": "/wp-config.php",
-              "status": 200,
-              "contentLength": "11928"
-            },
-            {
               "path": "/phpinfo.php",
-              "status": 200,
-              "contentLength": "11926"
+              "status": 406
             },
             {
               "path": "/.htaccess",
-              "status": 200,
-              "contentLength": "11919"
-            },
-            {
-              "path": "/admin",
-              "status": 200,
-              "contentLength": "11918"
-            },
-            {
-              "path": "/console",
-              "status": 200,
-              "contentLength": "11917"
+              "status": 406
             }
           ],
           "sensitiveFiles": [
             {
               "type": "Email",
-              "count": 8
+              "count": 3
             }
           ],
           "recommendations": [
@@ -197,30 +94,34 @@
       }
     },
     {
-      "url": "https://quantmutual.com/mutual-funds-india/funds",
-      "timestamp": "2025-01-04T19:09:16.953Z",
-      "securityScore": 80,
+      "url": "https://www.shoppersstop.com/category/men",
+      "timestamp": "2025-01-06T13:57:40.813Z",
+      "securityScore": 75,
       "findings": {
         "securityHeaders": {
           "present": {
             "Strict-Transport-Security": {
-              "value": "max-age=31536000",
+              "value": "max-age=31536000; includeSubDomains;",
+              "proper": true
+            },
+            "Content-Security-Policy": {
+              "value": "upgrade-insecure-requests",
               "proper": true
             },
             "X-Frame-Options": {
               "value": "SAMEORIGIN",
               "proper": true
+            },
+            "X-Content-Type-Options": {
+              "value": "nosniff",
+              "proper": true
             }
           },
           "missing": [
-            "Content-Security-Policy",
-            "X-Content-Type-Options",
             "Permissions-Policy",
             "Cross-Origin-Opener-Policy"
           ],
           "recommendations": [
-            "Implement strict CSP without unsafe-inline/unsafe-eval",
-            "Set X-Content-Type-Options to nosniff",
             "Implement restrictive Permissions-Policy",
             "Set Cross-Origin-Opener-Policy to same-origin"
           ]
@@ -235,16 +136,24 @@
             "secure": true
           },
           "cipher": {
-            "name": "TLS_AES_256_GCM_SHA384",
+            "name": "TLS_AES_128_GCM_SHA256",
             "secure": true
           },
           "recommendations": []
         },
         "vulnerabilities": {
           "xss": [],
-          "sqli": [],
+          "sqli": [
+            {
+              "url": "https://tracker.unbxdapi.com/v2/1p.jpg?UnbxdKey=ss-unbxd-aapac-shoppersstop-prod50901711607748&uid=uid-1736171850134-4713&action=page_view",
+              "method": "POST",
+              "payload": "{\"data\":{\"pageType\":\"Miscellaneous\",\"page_title\":\"Online Shopping for Men - Buy Men's Clothing & Accessories Online | Shoppers Stop\",\"url\":\"https://www.shoppersstop.com/category/men\",\"referrer\":\"\",\"visit_type\":\"first_time\",\"ver\":\"4.0.28\",\"_uf\":2569854551,\"visitId\":\"visitId-1736171850135-65145\"},\"action\":\"page_view\",\"uid\":\"uid-1736171850134-4713\",\"t\":\"1736171853959|0.853409355447079\"}"
+            }
+          ],
           "openRedirect": [],
-          "recommendations": []
+          "recommendations": [
+            "Use parameterized queries or ORM"
+          ]
         },
         "authAnalysis": {
           "findings": [],
@@ -253,55 +162,108 @@
         "exposedData": {
           "exposedPaths": [
             {
-              "path": "/.git",
-              "status": 200,
-              "contentLength": "13156"
-            },
-            {
-              "path": "/.env",
-              "status": 200,
-              "contentLength": "13157"
-            },
-            {
-              "path": "/config",
-              "status": 200,
-              "contentLength": "13160"
-            },
-            {
-              "path": "/backup",
-              "status": 200,
-              "contentLength": "13159"
-            },
-            {
-              "path": "/wp-config.php",
-              "status": 200,
-              "contentLength": "13174"
-            },
-            {
               "path": "/phpinfo.php",
-              "status": 200,
-              "contentLength": "13173"
+              "status": 406
             },
             {
               "path": "/.htaccess",
-              "status": 200,
-              "contentLength": "13162"
-            },
-            {
-              "path": "/admin",
-              "status": 200,
-              "contentLength": "13161"
-            },
-            {
-              "path": "/console",
-              "status": 200,
-              "contentLength": "13161"
+              "status": 406
             }
           ],
           "sensitiveFiles": [
             {
               "type": "Email",
-              "count": 8
+              "count": 2
+            }
+          ],
+          "recommendations": [
+            "Restrict access to sensitive paths and configuration files",
+            "Remove sensitive data from client-side code"
+          ]
+        }
+      }
+    },
+    {
+      "url": "https://www.shoppersstop.com/category/women",
+      "timestamp": "2025-01-06T13:57:47.087Z",
+      "securityScore": 75,
+      "findings": {
+        "securityHeaders": {
+          "present": {
+            "Strict-Transport-Security": {
+              "value": "max-age=31536000; includeSubDomains;",
+              "proper": true
+            },
+            "Content-Security-Policy": {
+              "value": "upgrade-insecure-requests",
+              "proper": true
+            },
+            "X-Frame-Options": {
+              "value": "SAMEORIGIN",
+              "proper": true
+            },
+            "X-Content-Type-Options": {
+              "value": "nosniff",
+              "proper": true
+            }
+          },
+          "missing": [
+            "Permissions-Policy",
+            "Cross-Origin-Opener-Policy"
+          ],
+          "recommendations": [
+            "Implement restrictive Permissions-Policy",
+            "Set Cross-Origin-Opener-Policy to same-origin"
+          ]
+        },
+        "sslAnalysis": {
+          "certificate": {
+            "valid": true,
+            "daysUntilExpiration": null
+          },
+          "protocol": {
+            "name": "TLSv1.3",
+            "secure": true
+          },
+          "cipher": {
+            "name": "TLS_AES_128_GCM_SHA256",
+            "secure": true
+          },
+          "recommendations": []
+        },
+        "vulnerabilities": {
+          "xss": [],
+          "sqli": [
+            {
+              "url": "https://tracker.unbxdapi.com/v2/1p.jpg?UnbxdKey=ss-unbxd-aapac-shoppersstop-prod50901711607748&uid=uid-1736171862680-87094&action=page_view",
+              "method": "POST",
+              "payload": "{\"data\":{\"pageType\":\"Miscellaneous\",\"page_title\":\"Online Shopping for Women - Buy Women's Clothing & Accessories Online | Shoppers Stop\",\"url\":\"https://www.shoppersstop.com/category/women\",\"referrer\":\"\",\"visit_type\":\"first_time\",\"ver\":\"4.0.28\",\"_uf\":2569854551,\"visitId\":\"visitId-1736171862681-43806\"},\"action\":\"page_view\",\"uid\":\"uid-1736171862680-87094\",\"t\":\"1736171864394|0.09537877955115937\"}"
+            }
+          ],
+          "openRedirect": [],
+          "recommendations": [
+            "Use parameterized queries or ORM"
+          ]
+        },
+        "authAnalysis": {
+          "findings": [],
+          "recommendations": []
+        },
+        "exposedData": {
+          "exposedPaths": [
+            {
+              "path": "/phpinfo.php",
+              "status": 406
+            },
+            {
+              "path": "/.htaccess",
+              "status": 406
+            }
+          ],
+          "sensitiveFiles": [
+            {
+              "type": "Email",
+              "count": 2
             }
           ],
           "recommendations": [

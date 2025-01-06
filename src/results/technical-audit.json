@@ -1,504 +1,568 @@
 {
   "mobile": [
     {
-      "url": "https://quantmutual.com/",
+      "url": "https://www.shoppersstop.com/",
       "strategy": "mobile",
-      "timestamp": "2025-01-04T19:06:14.156Z",
+      "timestamp": "2025-01-06T13:53:14.364Z",
       "metrics": {
-        "performance": 68,
-        "accessibility": 74,
-        "bestPractices": 50,
-        "seo": 83,
-        "lcp": 6800.899000000001,
-        "fid": 80,
-        "cls": 0,
-        "tti": 7093.289200000002,
-        "tbt": 30,
-        "requests": 52,
-        "totalBytes": 1598294,
-        "domElements": 524
-      },
-      "resources": {
-        "byType": {
-          "Document": {
-            "count": 1,
-            "size": 15245
-          },
-          "Stylesheet": {
-            "count": 15,
-            "size": 60790
-          },
-          "Script": {
-            "count": 9,
-            "size": 225155
-          },
-          "Image": {
-            "count": 26,
-            "size": 1281577
-          },
-          "Other": {
-            "count": 1,
-            "size": 15527
-          }
-        },
-        "totalSize": 1598294
-      },
-      "opportunities": [
-        {
-          "name": "render-blocking-resources",
-          "score": 0,
-          "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
-          "savings": 1966
-        },
-        {
-          "name": "unused-css-rules",
-          "score": 0,
-          "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-          "savings": 160
-        },
-        {
-          "name": "unused-javascript",
-          "score": 0,
-          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-          "savings": 490
-        },
-        {
-          "name": "unminified-javascript",
-          "score": 0,
-          "description": "Minifying JavaScript files can reduce payload sizes and script parse time. [Learn how to minify JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unminified-javascript/).",
-          "savings": 160
-        },
-        {
-          "name": "modern-image-formats",
-          "score": 0.5,
-          "description": "Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption. [Learn more about modern image formats](https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images/).",
-          "savings": 0
-        },
-        {
-          "name": "uses-responsive-images",
-          "score": 0,
-          "description": "Serve images that are appropriately-sized to save cellular data and improve load time. [Learn how to size images](https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/).",
-          "savings": 160
-        }
-      ]
-    },
-    {
-      "url": "https://quantmutual.com/about-us/quantgroup",
-      "strategy": "mobile",
-      "timestamp": "2025-01-04T19:06:33.060Z",
-      "metrics": {
-        "performance": 76,
-        "accessibility": 64,
-        "bestPractices": 50,
-        "seo": 83,
-        "lcp": 4266.639,
-        "fid": 16,
-        "cls": 0,
-        "tti": 4310.592000000001,
-        "tbt": 0,
-        "requests": 39,
-        "totalBytes": 519868,
-        "domElements": 393
-      },
-      "resources": {
-        "byType": {
-          "Document": {
-            "count": 1,
-            "size": 12953
-          },
-          "Stylesheet": {
-            "count": 16,
-            "size": 60524
-          },
-          "Script": {
-            "count": 9,
-            "size": 216208
-          },
-          "Image": {
-            "count": 12,
-            "size": 214656
-          },
-          "Other": {
-            "count": 1,
-            "size": 15527
-          }
-        },
-        "totalSize": 519868
-      },
-      "opportunities": [
-        {
-          "name": "render-blocking-resources",
-          "score": 0,
-          "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
-          "savings": 2154
-        },
-        {
-          "name": "unused-css-rules",
-          "score": 0,
-          "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-          "savings": 350
-        },
-        {
-          "name": "unused-javascript",
-          "score": 0,
-          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-          "savings": 700
-        },
-        {
-          "name": "unminified-javascript",
-          "score": 0,
-          "description": "Minifying JavaScript files can reduce payload sizes and script parse time. [Learn how to minify JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unminified-javascript/).",
-          "savings": 350
-        },
-        {
-          "name": "modern-image-formats",
-          "score": 0.5,
-          "description": "Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption. [Learn more about modern image formats](https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images/).",
-          "savings": 0
-        },
-        {
-          "name": "uses-responsive-images",
-          "score": 0.5,
-          "description": "Serve images that are appropriately-sized to save cellular data and improve load time. [Learn how to size images](https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/).",
-          "savings": 0
-        }
-      ]
-    },
-    {
-      "url": "https://quantmutual.com/mutual-funds-india/funds",
-      "strategy": "mobile",
-      "timestamp": "2025-01-04T19:06:52.065Z",
-      "metrics": {
-        "performance": 78,
-        "accessibility": 69,
-        "bestPractices": 50,
+        "performance": 22,
+        "accessibility": 75,
+        "bestPractices": 57,
         "seo": 92,
-        "lcp": 4215.778499999999,
-        "fid": 85,
-        "cls": 0,
-        "tti": 4277.14545,
-        "tbt": 35,
-        "requests": 66,
-        "totalBytes": 1422720,
-        "domElements": 726
+        "lcp": 10753.521320000005,
+        "fid": 598,
+        "cls": 0.8386095535736696,
+        "tti": 17653.120300000013,
+        "tbt": 1442.5000000000027,
+        "requests": 302,
+        "totalBytes": 5513049,
+        "domElements": 968
       },
       "resources": {
         "byType": {
           "Document": {
-            "count": 1,
-            "size": 14184
-          },
-          "Stylesheet": {
-            "count": 16,
-            "size": 60528
-          },
-          "Script": {
-            "count": 9,
-            "size": 216248
-          },
-          "Image": {
-            "count": 37,
-            "size": 1116131
+            "count": 6,
+            "size": 53396
           },
           "Font": {
+            "count": 4,
+            "size": 162085
+          },
+          "Stylesheet": {
             "count": 2,
-            "size": 102
+            "size": 33010
+          },
+          "Script": {
+            "count": 63,
+            "size": 1086347
+          },
+          "Image": {
+            "count": 206,
+            "size": 4123150
+          },
+          "Fetch": {
+            "count": 10,
+            "size": 48694
+          },
+          "Preflight": {
+            "count": 1,
+            "size": 0
+          },
+          "Ping": {
+            "count": 5,
+            "size": 3609
+          },
+          "XHR": {
+            "count": 1,
+            "size": 448
+          },
+          "Manifest": {
+            "count": 1,
+            "size": 857
           },
           "Other": {
             "count": 1,
-            "size": 15527
+            "size": 1406
+          },
+          "other": {
+            "count": 2,
+            "size": 47
           }
         },
-        "totalSize": 1422720
+        "totalSize": 5513049
       },
       "opportunities": [
-        {
-          "name": "render-blocking-resources",
-          "score": 0,
-          "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
-          "savings": 1894
-        },
         {
           "name": "unused-css-rules",
           "score": 0,
           "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-          "savings": 270
+          "savings": 620
         },
         {
           "name": "unused-javascript",
           "score": 0,
           "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-          "savings": 650
-        },
-        {
-          "name": "unminified-javascript",
-          "score": 0,
-          "description": "Minifying JavaScript files can reduce payload sizes and script parse time. [Learn how to minify JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unminified-javascript/).",
-          "savings": 270
+          "savings": 470
         },
         {
           "name": "modern-image-formats",
-          "score": 0,
+          "score": 0.5,
           "description": "Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption. [Learn more about modern image formats](https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images/).",
-          "savings": 70
+          "savings": 0
+        },
+        {
+          "name": "uses-responsive-images",
+          "score": 0,
+          "description": "Serve images that are appropriately-sized to save cellular data and improve load time. [Learn how to size images](https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/).",
+          "savings": 1480
+        }
+      ]
+    },
+    {
+      "url": "https://www.shoppersstop.com/category/men",
+      "strategy": "mobile",
+      "timestamp": "2025-01-06T13:53:44.061Z",
+      "metrics": {
+        "performance": 35,
+        "accessibility": 74,
+        "bestPractices": 57,
+        "seo": 85,
+        "lcp": 20631.367500000004,
+        "fid": 465,
+        "cls": 0.2752337612185913,
+        "tti": 28966.964852000012,
+        "tbt": 654.5,
+        "requests": 269,
+        "totalBytes": 13410460,
+        "domElements": 1011
+      },
+      "resources": {
+        "byType": {
+          "Document": {
+            "count": 6,
+            "size": 40821
+          },
+          "Font": {
+            "count": 3,
+            "size": 93797
+          },
+          "Stylesheet": {
+            "count": 2,
+            "size": 33037
+          },
+          "Script": {
+            "count": 63,
+            "size": 1097384
+          },
+          "Image": {
+            "count": 175,
+            "size": 12103276
+          },
+          "Fetch": {
+            "count": 8,
+            "size": 34253
+          },
+          "Preflight": {
+            "count": 1,
+            "size": 0
+          },
+          "Ping": {
+            "count": 6,
+            "size": 3998
+          },
+          "XHR": {
+            "count": 1,
+            "size": 448
+          },
+          "Manifest": {
+            "count": 1,
+            "size": 850
+          },
+          "Other": {
+            "count": 1,
+            "size": 1498
+          },
+          "other": {
+            "count": 2,
+            "size": 1098
+          }
+        },
+        "totalSize": 13410460
+      },
+      "opportunities": [
+        {
+          "name": "unused-css-rules",
+          "score": 0,
+          "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+          "savings": 390
+        },
+        {
+          "name": "unused-javascript",
+          "score": 0,
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+          "savings": 1890
         },
         {
           "name": "uses-responsive-images",
           "score": 0.5,
           "description": "Serve images that are appropriately-sized to save cellular data and improve load time. [Learn how to size images](https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/).",
-          "savings": 0
+          "savings": 20
+        }
+      ]
+    },
+    {
+      "url": "https://www.shoppersstop.com/category/women",
+      "strategy": "mobile",
+      "timestamp": "2025-01-06T13:54:16.478Z",
+      "metrics": {
+        "performance": 36,
+        "accessibility": 79,
+        "bestPractices": 57,
+        "seo": 92,
+        "lcp": 6721.052000000001,
+        "fid": 368,
+        "cls": 0.6603742362924812,
+        "tti": 15409.899000000001,
+        "tbt": 607.4999999999991,
+        "requests": 171,
+        "totalBytes": 2480624,
+        "domElements": 825
+      },
+      "resources": {
+        "byType": {
+          "Document": {
+            "count": 6,
+            "size": 39904
+          },
+          "Font": {
+            "count": 3,
+            "size": 93509
+          },
+          "Stylesheet": {
+            "count": 2,
+            "size": 33308
+          },
+          "Script": {
+            "count": 58,
+            "size": 1052862
+          },
+          "Image": {
+            "count": 83,
+            "size": 1226406
+          },
+          "Fetch": {
+            "count": 7,
+            "size": 27120
+          },
+          "Ping": {
+            "count": 6,
+            "size": 3998
+          },
+          "Preflight": {
+            "count": 1,
+            "size": 0
+          },
+          "XHR": {
+            "count": 1,
+            "size": 448
+          },
+          "Manifest": {
+            "count": 1,
+            "size": 609
+          },
+          "Other": {
+            "count": 1,
+            "size": 1356
+          },
+          "other": {
+            "count": 2,
+            "size": 1104
+          }
+        },
+        "totalSize": 2480624
+      },
+      "opportunities": [
+        {
+          "name": "unused-css-rules",
+          "score": 0,
+          "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+          "savings": 190
+        },
+        {
+          "name": "unused-javascript",
+          "score": 0,
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+          "savings": 370
+        },
+        {
+          "name": "uses-responsive-images",
+          "score": 0,
+          "description": "Serve images that are appropriately-sized to save cellular data and improve load time. [Learn how to size images](https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/).",
+          "savings": 190
         }
       ]
     }
   ],
   "desktop": [
     {
-      "url": "https://quantmutual.com/",
+      "url": "https://www.shoppersstop.com/",
       "strategy": "desktop",
-      "timestamp": "2025-01-04T19:06:23.171Z",
+      "timestamp": "2025-01-06T13:53:28.686Z",
       "metrics": {
-        "performance": 59,
-        "accessibility": 74,
-        "bestPractices": 48,
-        "seo": 83,
-        "lcp": 6142.726000000001,
-        "fid": 22,
-        "cls": 0.01660321845925626,
-        "tti": 6283.252400000001,
-        "tbt": 0,
-        "requests": 52,
-        "totalBytes": 1598054,
-        "domElements": 524
-      },
-      "resources": {
-        "byType": {
-          "Document": {
-            "count": 1,
-            "size": 15245
-          },
-          "Stylesheet": {
-            "count": 15,
-            "size": 60473
-          },
-          "Script": {
-            "count": 9,
-            "size": 224984
-          },
-          "Image": {
-            "count": 26,
-            "size": 1281825
-          },
-          "Other": {
-            "count": 1,
-            "size": 15527
-          }
-        },
-        "totalSize": 1598054
-      },
-      "opportunities": [
-        {
-          "name": "render-blocking-resources",
-          "score": 0,
-          "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
-          "savings": 1955
-        },
-        {
-          "name": "unused-css-rules",
-          "score": 0,
-          "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-          "savings": 350
-        },
-        {
-          "name": "unused-javascript",
-          "score": 0,
-          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-          "savings": 530
-        },
-        {
-          "name": "unminified-javascript",
-          "score": 0,
-          "description": "Minifying JavaScript files can reduce payload sizes and script parse time. [Learn how to minify JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unminified-javascript/).",
-          "savings": 180
-        },
-        {
-          "name": "modern-image-formats",
-          "score": 0,
-          "description": "Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption. [Learn more about modern image formats](https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images/).",
-          "savings": 530
-        },
-        {
-          "name": "uses-responsive-images",
-          "score": 0,
-          "description": "Serve images that are appropriately-sized to save cellular data and improve load time. [Learn how to size images](https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/).",
-          "savings": 1050
-        }
-      ]
-    },
-    {
-      "url": "https://quantmutual.com/about-us/quantgroup",
-      "strategy": "desktop",
-      "timestamp": "2025-01-04T19:06:41.067Z",
-      "metrics": {
-        "performance": 64,
-        "accessibility": 64,
-        "bestPractices": 48,
-        "seo": 83,
-        "lcp": 3577.3870000000006,
-        "fid": 16,
-        "cls": 0.0006988860023223078,
-        "tti": 3586.1826000000005,
-        "tbt": 0,
-        "requests": 39,
-        "totalBytes": 519886,
-        "domElements": 393
-      },
-      "resources": {
-        "byType": {
-          "Document": {
-            "count": 1,
-            "size": 12953
-          },
-          "Stylesheet": {
-            "count": 16,
-            "size": 60523
-          },
-          "Script": {
-            "count": 9,
-            "size": 216209
-          },
-          "Image": {
-            "count": 12,
-            "size": 214674
-          },
-          "Other": {
-            "count": 1,
-            "size": 15527
-          }
-        },
-        "totalSize": 519886
-      },
-      "opportunities": [
-        {
-          "name": "render-blocking-resources",
-          "score": 0,
-          "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
-          "savings": 1859
-        },
-        {
-          "name": "unused-css-rules",
-          "score": 0,
-          "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-          "savings": 180
-        },
-        {
-          "name": "unused-javascript",
-          "score": 0,
-          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-          "savings": 530
-        },
-        {
-          "name": "unminified-javascript",
-          "score": 0,
-          "description": "Minifying JavaScript files can reduce payload sizes and script parse time. [Learn how to minify JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unminified-javascript/).",
-          "savings": 180
-        },
-        {
-          "name": "modern-image-formats",
-          "score": 0.5,
-          "description": "Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption. [Learn more about modern image formats](https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images/).",
-          "savings": 0
-        },
-        {
-          "name": "uses-responsive-images",
-          "score": 0.5,
-          "description": "Serve images that are appropriately-sized to save cellular data and improve load time. [Learn how to size images](https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/).",
-          "savings": 0
-        }
-      ]
-    },
-    {
-      "url": "https://quantmutual.com/mutual-funds-india/funds",
-      "strategy": "desktop",
-      "timestamp": "2025-01-04T19:07:01.444Z",
-      "metrics": {
-        "performance": 63,
-        "accessibility": 69,
-        "bestPractices": 48,
+        "performance": 33,
+        "accessibility": 75,
+        "bestPractices": 56,
         "seo": 92,
-        "lcp": 4026.603,
-        "fid": 70,
-        "cls": 0.008737899393475771,
-        "tti": 4076.9145,
-        "tbt": 20,
-        "requests": 66,
-        "totalBytes": 1422649,
-        "domElements": 726
+        "lcp": 8624.269999999997,
+        "fid": 446.9999999999991,
+        "cls": 0.027578221826859185,
+        "tti": 17921.831599999994,
+        "tbt": 1270.0000000000018,
+        "requests": 301,
+        "totalBytes": 5512086,
+        "domElements": 968
       },
       "resources": {
         "byType": {
           "Document": {
-            "count": 1,
-            "size": 14184
-          },
-          "Stylesheet": {
-            "count": 16,
-            "size": 60521
-          },
-          "Script": {
-            "count": 9,
-            "size": 216210
-          },
-          "Image": {
-            "count": 37,
-            "size": 1116105
+            "count": 6,
+            "size": 53413
           },
           "Font": {
+            "count": 4,
+            "size": 161995
+          },
+          "Stylesheet": {
             "count": 2,
-            "size": 102
+            "size": 33007
+          },
+          "Script": {
+            "count": 63,
+            "size": 1090406
+          },
+          "Image": {
+            "count": 206,
+            "size": 4127152
+          },
+          "Fetch": {
+            "count": 9,
+            "size": 38772
+          },
+          "Ping": {
+            "count": 5,
+            "size": 3609
+          },
+          "Preflight": {
+            "count": 1,
+            "size": 0
+          },
+          "XHR": {
+            "count": 1,
+            "size": 448
+          },
+          "Manifest": {
+            "count": 1,
+            "size": 878
           },
           "Other": {
             "count": 1,
-            "size": 15527
+            "size": 1307
+          },
+          "other": {
+            "count": 2,
+            "size": 1099
           }
         },
-        "totalSize": 1422649
+        "totalSize": 5512086
       },
       "opportunities": [
-        {
-          "name": "render-blocking-resources",
-          "score": 0,
-          "description": "Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles. [Learn how to eliminate render-blocking resources](https://developer.chrome.com/docs/lighthouse/performance/render-blocking-resources/).",
-          "savings": 1761
-        },
         {
           "name": "unused-css-rules",
           "score": 0,
           "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
-          "savings": 340
+          "savings": 360
         },
         {
           "name": "unused-javascript",
           "score": 0,
           "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
-          "savings": 500
-        },
-        {
-          "name": "unminified-javascript",
-          "score": 0,
-          "description": "Minifying JavaScript files can reduce payload sizes and script parse time. [Learn how to minify JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unminified-javascript/).",
-          "savings": 270
+          "savings": 360
         },
         {
           "name": "modern-image-formats",
-          "score": 0,
+          "score": 0.5,
           "description": "Image formats like WebP and AVIF often provide better compression than PNG or JPEG, which means faster downloads and less data consumption. [Learn more about modern image formats](https://developer.chrome.com/docs/lighthouse/performance/uses-webp-images/).",
-          "savings": 170
+          "savings": 0
         },
         {
           "name": "uses-responsive-images",
           "score": 0,
           "description": "Serve images that are appropriately-sized to save cellular data and improve load time. [Learn how to size images](https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/).",
-          "savings": 170
+          "savings": 1860
+        }
+      ]
+    },
+    {
+      "url": "https://www.shoppersstop.com/category/men",
+      "strategy": "desktop",
+      "timestamp": "2025-01-06T13:54:04.274Z",
+      "metrics": {
+        "performance": 17,
+        "accessibility": 74,
+        "bestPractices": 56,
+        "seo": 85,
+        "lcp": 22412.748,
+        "fid": 341,
+        "cls": 0.43091550004172346,
+        "tti": 30106.375434999994,
+        "tbt": 647.5404999999982,
+        "requests": 268,
+        "totalBytes": 13552403,
+        "domElements": 1011
+      },
+      "resources": {
+        "byType": {
+          "Document": {
+            "count": 6,
+            "size": 40820
+          },
+          "Font": {
+            "count": 3,
+            "size": 93485
+          },
+          "Stylesheet": {
+            "count": 2,
+            "size": 33037
+          },
+          "Script": {
+            "count": 63,
+            "size": 1086780
+          },
+          "Image": {
+            "count": 174,
+            "size": 12256113
+          },
+          "Ping": {
+            "count": 6,
+            "size": 3998
+          },
+          "Fetch": {
+            "count": 8,
+            "size": 34246
+          },
+          "Preflight": {
+            "count": 1,
+            "size": 0
+          },
+          "XHR": {
+            "count": 1,
+            "size": 448
+          },
+          "Manifest": {
+            "count": 1,
+            "size": 878
+          },
+          "Other": {
+            "count": 1,
+            "size": 1499
+          },
+          "other": {
+            "count": 2,
+            "size": 1099
+          }
+        },
+        "totalSize": 13552403
+      },
+      "opportunities": [
+        {
+          "name": "unused-css-rules",
+          "score": 0,
+          "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+          "savings": 230
+        },
+        {
+          "name": "unused-javascript",
+          "score": 0,
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+          "savings": 1550
+        },
+        {
+          "name": "uses-responsive-images",
+          "score": 0,
+          "description": "Serve images that are appropriately-sized to save cellular data and improve load time. [Learn how to size images](https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/).",
+          "savings": 30
+        }
+      ]
+    },
+    {
+      "url": "https://www.shoppersstop.com/category/women",
+      "strategy": "desktop",
+      "timestamp": "2025-01-06T13:54:28.445Z",
+      "metrics": {
+        "performance": 17,
+        "accessibility": 79,
+        "bestPractices": 56,
+        "seo": 92,
+        "lcp": 6738.464,
+        "fid": 346,
+        "cls": 0.6409580250958501,
+        "tti": 15486.4214,
+        "tbt": 665.5,
+        "requests": 171,
+        "totalBytes": 2482016,
+        "domElements": 825
+      },
+      "resources": {
+        "byType": {
+          "Document": {
+            "count": 6,
+            "size": 40238
+          },
+          "Font": {
+            "count": 3,
+            "size": 93488
+          },
+          "Stylesheet": {
+            "count": 2,
+            "size": 33034
+          },
+          "Script": {
+            "count": 58,
+            "size": 1052989
+          },
+          "Image": {
+            "count": 83,
+            "size": 1227183
+          },
+          "Fetch": {
+            "count": 7,
+            "size": 27158
+          },
+          "Preflight": {
+            "count": 1,
+            "size": 0
+          },
+          "Ping": {
+            "count": 6,
+            "size": 3998
+          },
+          "XHR": {
+            "count": 1,
+            "size": 448
+          },
+          "Manifest": {
+            "count": 1,
+            "size": 878
+          },
+          "Other": {
+            "count": 1,
+            "size": 1508
+          },
+          "other": {
+            "count": 2,
+            "size": 1094
+          }
+        },
+        "totalSize": 2482016
+      },
+      "opportunities": [
+        {
+          "name": "unused-css-rules",
+          "score": 0,
+          "description": "Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity. [Learn how to reduce unused CSS](https://developer.chrome.com/docs/lighthouse/performance/unused-css-rules/).",
+          "savings": 180
+        },
+        {
+          "name": "unused-javascript",
+          "score": 0,
+          "description": "Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity. [Learn how to reduce unused JavaScript](https://developer.chrome.com/docs/lighthouse/performance/unused-javascript/).",
+          "savings": 180
+        },
+        {
+          "name": "uses-responsive-images",
+          "score": 0,
+          "description": "Serve images that are appropriately-sized to save cellular data and improve load time. [Learn how to size images](https://developer.chrome.com/docs/lighthouse/performance/uses-responsive-images/).",
+          "savings": 30
         }
       ]
     }
@@ -509,16 +573,16 @@
     "failedAudits": 0,
     "averageScores": {
       "mobile": {
-        "performance": 74,
-        "accessibility": 69,
-        "bestPractices": 50,
-        "seo": 86
+        "performance": 31,
+        "accessibility": 76,
+        "bestPractices": 57,
+        "seo": 90
       },
       "desktop": {
-        "performance": 62,
-        "accessibility": 69,
-        "bestPractices": 48,
-        "seo": 86
+        "performance": 22,
+        "accessibility": 76,
+        "bestPractices": 56,
+        "seo": 90
       }
     }
   }
